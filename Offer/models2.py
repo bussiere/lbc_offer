@@ -21,6 +21,20 @@ class Seller(models.Model):
     uuid = models.CharField(blank=True, null=True, max_length=48)
 
 
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["url"] = self.url
+        result["contact"] = self.contact
+        result["phone"] = self.phone
+        result["email"] = self.email
+        result["note"] = self.note
+        result["adresse"] = self.adresse
+        result["uuid"] = self.uuid
+        return result
+
 class Norme(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
@@ -28,11 +42,25 @@ class Norme(models.Model):
     uuid = models.CharField(blank=True, null=True, max_length=48)
 
 
+    def toJson():
+        result = {}
+        result["name"] = self.name
+        result["valeur"] = self.valeur
+        result["uuid"] = self.uuid
+        return result
+
 class Equipement(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
     valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+
+    def toJson():
+        result = {}
+        result["name"] = self.name
+        result["valeur"] = self.valeur
+        result["uuid"] = self.uuid
+        return result
 
 class Pic(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
@@ -40,6 +68,14 @@ class Pic(models.Model):
     uuid = models.CharField(blank=True, null=True, max_length=48)
 
 # Create your models here.
+
+
+    def toJson():
+        result = {}
+        result["valeur"] = self.valeur
+        result["uuid"] = self.uuid
+        return result
+
 class Rent(models.Model):
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
@@ -91,6 +127,34 @@ class Rent(models.Model):
         return super(Rent, self).save(*args, **kwargs)
 
 
+    def toJson():
+        result = {}
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse"] = self.adresse
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norme"] = self.norme
+        result["equipement"] = self.equipement
+        result["pic"] = self.pic
+        result["price"] = self.price
+        result["available"] = self.available
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["uuid"] = self.uuid
+        return result
+
 class Buy(models.Model):
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
@@ -138,6 +202,34 @@ class Buy(models.Model):
                 self.geoHash = self.adresse.geoHash
         return super(Buy, self).save(*args, **kwargs)
 
+
+    def toJson():
+        result = {}
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse"] = self.adresse
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norme"] = self.norme
+        result["equipement"] = self.equipement
+        result["pic"] = self.pic
+        result["available"] = self.available
+        result["price"] = self.price
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["uuid"] = self.uuid
+        return result
 
 class BuyPlan(models.Model):
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
@@ -187,3 +279,32 @@ class BuyPlan(models.Model):
             if self.adresse.geoHash:
                 self.geoHash = self.adresse.geoHash
         return super(BuyPlan, self).save(*args, **kwargs)
+
+
+    def toJson():
+        result = {}
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse"] = self.adresse
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norme"] = self.norme
+        result["equipement"] = self.equipement
+        result["pic"] = self.pic
+        result["available"] = self.available
+        result["price"] = self.price
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["uuid"] = self.uuid
+        return result
