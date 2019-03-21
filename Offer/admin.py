@@ -8,6 +8,8 @@ from .models import BuyPlan
 
 
 class BuyPlan_Admin(admin.ModelAdmin):
+    list_display = ("name","geoHash","uuid")
+    search_fields = ("name","geoHash","uuid")
     actions = [
         export_as_csv_action(
             "CSV Export",

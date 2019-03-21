@@ -2,6 +2,10 @@ i = -1
 j = -1
 result = []
 fileFinal = []
+
+#to examine 
+#https://stackoverflow.com/questions/17388254/django-retrieving-ids-of-manytomany-fields-quickly
+
 template = """
     def toJson():
         result = {}"""
