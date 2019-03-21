@@ -1,0 +1,118 @@
+
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["url"] = self.url
+        result["contact"] = self.contact
+        result["phone"] = self.phone
+        result["email"] = self.email
+        result["note"] = self.note
+        result["adresse"] = self.adresse
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["name"] = self.name
+        result["valeur"] = self.valeur
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["name"] = self.name
+        result["valeur"] = self.valeur
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["valeur"] = self.valeur
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse"] = self.adresse
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norme"] = self.norme
+        result["equipement"] = self.equipement
+        result["pic"] = self.pic
+        result["price"] = self.price
+        result["available"] = self.available
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse"] = self.adresse
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norme"] = self.norme
+        result["equipement"] = self.equipement
+        result["pic"] = self.pic
+        result["available"] = self.available
+        result["price"] = self.price
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse"] = self.adresse
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norme"] = self.norme
+        result["equipement"] = self.equipement
+        result["pic"] = self.pic
+        result["available"] = self.available
+        result["price"] = self.price
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["uuid"] = self.uuid
+        return result
