@@ -1,5 +1,4 @@
 from django.db import models
-from Geo.models import Adresse
 from django.utils import timezone
 
 class Seller(models.Model):
@@ -11,13 +10,10 @@ class Seller(models.Model):
     phone = models.CharField(blank=True, null=True, max_length=200)
     email = models.CharField(blank=True, null=True, max_length=200)
     note = models.CharField(blank=True, null=True, max_length=200)
-    adresse = models.ForeignKey(
-        Adresse,
-        blank=True,
-        null=True,
-        on_delete=models.PROTECT,
-        related_name="AdresseSeller",
-    )
+    adresse_uuid = models.ForeignKey(blank=True, null=True, max_length=48)
+    geoHash = models.CharField(blank=True, null=True, max_length=200)
+    gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     uuid = models.CharField(blank=True, null=True, max_length=48)
 
 
@@ -49,6 +45,8 @@ class Rent(models.Model):
     modified = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
     geoHash = models.CharField(blank=True, null=True, max_length=200)
+    gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
     adresse = models.ForeignKey(
@@ -100,6 +98,8 @@ class Buy(models.Model):
     modified = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
     geoHash = models.CharField(blank=True, null=True, max_length=200)
+    gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
     adresse = models.ForeignKey(
@@ -148,6 +148,8 @@ class BuyPlan(models.Model):
     modified = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
     geoHash = models.CharField(blank=True, null=True, max_length=200)
+    gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
     adresse = models.ForeignKey(
