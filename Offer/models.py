@@ -10,7 +10,7 @@ class Seller(models.Model):
     phone = models.CharField(blank=True, null=True, max_length=200)
     email = models.CharField(blank=True, null=True, max_length=200)
     note = models.CharField(blank=True, null=True, max_length=200)
-    adresse_uuid = models.ForeignKey(blank=True, null=True, max_length=48)
+    adresse_uuid = models.CharField(blank=True, null=True, max_length=48)
     geoHash = models.CharField(blank=True, null=True, max_length=200)
     gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
@@ -122,7 +122,7 @@ class Rent(models.Model):
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
-    adresse = models.CharField(blank=True, null=True, max_length=200)
+    adresse_uuid = models.CharField(blank=True, null=True, max_length=48)
     seller = models.ForeignKey(
         Seller, blank=True, on_delete=models.PROTECT, related_name="SellerRent"
     )
@@ -141,6 +141,7 @@ class Rent(models.Model):
     ref1 = models.CharField(blank=True, null=True, max_length=200)
     ref2 = models.CharField(blank=True, null=True, max_length=200)
     score = models.IntegerField(blank=True, null=True)
+    origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
     
     def __str__(self):
@@ -182,9 +183,7 @@ class Buy(models.Model):
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
-    adresse = models.ForeignKey(
-        Adresse, blank=True, on_delete=models.PROTECT, related_name="AdresseBuy"
-    )
+    adresse_uuid = models.CharField(blank=True, null=True, max_length=48)
     seller = models.ForeignKey(
         Seller, blank=True, on_delete=models.PROTECT, related_name="SellerBuy"
     )
@@ -201,6 +200,7 @@ class Buy(models.Model):
     ref1 = models.CharField(blank=True, null=True, max_length=200)
     ref2 = models.CharField(blank=True, null=True, max_length=200)
     score = models.IntegerField(blank=True, null=True)
+    origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.codePostal
@@ -241,9 +241,7 @@ class BuyPlan(models.Model):
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
-    adresse = models.ForeignKey(
-        Adresse, blank=True, on_delete=models.PROTECT, related_name="AdresseBuyPlan"
-    )
+    adresse_uuid = models.CharField(blank=True, null=True, max_length=48)
     seller = models.ForeignKey(
         Seller, blank=True, on_delete=models.PROTECT, related_name="SellerBuyPlan"
     )
@@ -262,6 +260,7 @@ class BuyPlan(models.Model):
     ref1 = models.CharField(blank=True, null=True, max_length=200)
     ref2 = models.CharField(blank=True, null=True, max_length=200)
     score = models.IntegerField(blank=True, null=True)
+    origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.codePostal
