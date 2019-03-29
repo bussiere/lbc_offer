@@ -36,6 +36,8 @@ class Seller(models.Model):
         return result
 
 class Norme(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     nameP = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
     valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
@@ -50,6 +52,8 @@ class Norme(models.Model):
         return result
 
 class Equipement(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     nameP = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
     valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
@@ -63,6 +67,8 @@ class Equipement(models.Model):
         return result
 
 class Pic(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     nameP = (("b", "Big"), ("s", "Small"))
     valeur = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)

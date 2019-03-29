@@ -15,25 +15,97 @@ class Seller(models.Model):
     gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    def __str__(self):
+        return self.name + ":" + str(self.id) + ":" + self.codePostal
 
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
+        if not self.geoHash and (self.gpsLat and self.gpsLong):
+            try :
+                data = {"Lat":self.gpsLat,"Long":self.gpsLong}
+                r = requests.post("http://127.0.0.1:8080/EncodeGeoHash/",json=data)
+                r = r.json()
+                self.geoHash = r["GeoHash"]
+            except Exception as e:
+                print(e)
+                pass
+        return super(Seller, self).save(*args, **kwargs)
 
 class Norme(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
     valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    def __str__(self):
+        return self.name + ":" + str(self.id) + ":" + self.codePostal
 
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
+        if not self.geoHash and (self.gpsLat and self.gpsLong):
+            try :
+                data = {"Lat":self.gpsLat,"Long":self.gpsLong}
+                r = requests.post("http://127.0.0.1:8080/EncodeGeoHash/",json=data)
+                r = r.json()
+                self.geoHash = r["GeoHash"]
+            except Exception as e:
+                print(e)
+                pass
+        return super(Norme, self).save(*args, **kwargs)
 
 class Equipement(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
     valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    def __str__(self):
+        return self.name + ":" + str(self.id) + ":" + self.codePostal
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
+        return super(Equipement, self).save(*args, **kwargs)
 
 class Pic(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
     valeur = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    def __str__(self):
+        return self.name + ":" + str(self.id) + ":" + self.codePostal
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
+        return super(Pic, self).save(*args, **kwargs)
 
 # Create your models here.
 class Rent(models.Model):
@@ -43,15 +115,14 @@ class Rent(models.Model):
     catTwo = models.CharField(max_length=1, choices=Cat_Two, blank=True, null=True)
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
+    dateAd = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
     geoHash = models.CharField(blank=True, null=True, max_length=200)
     gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
-    adresse = models.ForeignKey(
-        Adresse, blank=True, on_delete=models.PROTECT, related_name="AdresseRent"
-    )
+    adresse = models.CharField(blank=True, null=True, max_length=200)
     seller = models.ForeignKey(
         Seller, blank=True, on_delete=models.PROTECT, related_name="SellerRent"
     )
@@ -83,9 +154,17 @@ class Rent(models.Model):
         if not self.id:
             self.created = timezone.now()
         self.modified = timezone.now()
-        if not self.geoHash:
-            if self.adresse.geoHash:
-                self.geoHash = self.adresse.geoHash
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
+        if not self.geoHash and (self.gpsLat and self.gpsLong):
+            try :
+                data = {"Lat":self.gpsLat,"Long":self.gpsLong}
+                r = requests.post("http://127.0.0.1:8080/EncodeGeoHash/",json=data)
+                r = r.json()
+                self.geoHash = r["GeoHash"]
+            except Exception as e:
+                print(e)
+                pass
         return super(Rent, self).save(*args, **kwargs)
 
 
@@ -96,6 +175,7 @@ class Buy(models.Model):
     catTwo = models.CharField(max_length=1, choices=Cat_Two, blank=True, null=True)
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
+    dateAd = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
     geoHash = models.CharField(blank=True, null=True, max_length=200)
     gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
@@ -133,9 +213,17 @@ class Buy(models.Model):
         if not self.id:
             self.created = timezone.now()
         self.modified = timezone.now()
-        if not self.geoHash:
-            if self.adresse.geoHash:
-                self.geoHash = self.adresse.geoHash
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
+        if not self.geoHash and (self.gpsLat and self.gpsLong):
+            try :
+                data = {"Lat":self.gpsLat,"Long":self.gpsLong}
+                r = requests.post("http://127.0.0.1:8080/EncodeGeoHash/",json=data)
+                r = r.json()
+                self.geoHash = r["GeoHash"]
+            except Exception as e:
+                print(e)
+                pass
         return super(Buy, self).save(*args, **kwargs)
 
 
@@ -146,6 +234,7 @@ class BuyPlan(models.Model):
     catTwo = models.CharField(max_length=1, choices=Cat_Two, blank=True, null=True)
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
+    dateAd = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
     geoHash = models.CharField(blank=True, null=True, max_length=200)
     gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
@@ -185,7 +274,15 @@ class BuyPlan(models.Model):
         if not self.id:
             self.created = timezone.now()
         self.modified = timezone.now()
-        if not self.geoHash:
-            if self.adresse.geoHash:
-                self.geoHash = self.adresse.geoHash
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
+        if not self.geoHash and (self.gpsLat and self.gpsLong):
+            try :
+                data = {"Lat":self.gpsLat,"Long":self.gpsLong}
+                r = requests.post("http://127.0.0.1:8080/EncodeGeoHash/",json=data)
+                r = r.json()
+                self.geoHash = r["GeoHash"]
+            except Exception as e:
+                print(e)
+                pass
         return super(BuyPlan, self).save(*args, **kwargs)
