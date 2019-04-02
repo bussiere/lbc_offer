@@ -62,10 +62,11 @@ class Seller(models.Model):
         result["uuid"] = self.uuid
         return result
 
-class Norme(models.Model):
+class Norm(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
+    nameP2 = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
-    valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
+    value = models.CharField(max_length=100, choices=nameP2, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
     history = HistoricalRecords()
     def __str__(self):
@@ -90,19 +91,20 @@ class Norme(models.Model):
             except Exception as e:
                 print(e)
                 pass
-        return super(Norme, self).save(*args, **kwargs)
+        return super(Norm, self).save(*args, **kwargs)
 
     def to_json(self):
         result = {}
         result["name"] = self.name
-        result["valeur"] = self.valeur
+        result["value"] = self.value
         result["uuid"] = self.uuid
         return result
 
-class Equipement(models.Model):
+class Equipment(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
+    nameP2 = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
-    valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
+    value = models.CharField(max_length=100, choices=nameP2, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)    
     history = HistoricalRecords()
     def __str__(self):
@@ -118,18 +120,18 @@ class Equipement(models.Model):
         self.modified = timezone.now()
         if not self.uuid :
             self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
-        return super(Equipement, self).save(*args, **kwargs)
+        return super(Equipment, self).save(*args, **kwargs)
 
     def to_json(self):
         result = {}
         result["name"] = self.name
-        result["valeur"] = self.valeur
+        result["value"] = self.value
         result["uuid"] = self.uuid
         return result
 
 class Pic(models.Model):
     nameP = (("b", "Big"), ("s", "Small"))
-    valeur = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
+    value = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
     history = HistoricalRecords()
     def __str__(self):
@@ -152,7 +154,7 @@ class Pic(models.Model):
 
     def to_json(self):
         result = {}
-        result["valeur"] = self.valeur
+        result["value"] = self.value
         result["uuid"] = self.uuid
         return result
 
@@ -179,9 +181,9 @@ class Rent(models.Model):
     description = models.CharField(blank=True, null=True, max_length=300)
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
-    norme = models.ManyToManyField(Norme, blank=True, related_name="NormeRent")
+    norm = models.ManyToManyField(Norm, blank=True, related_name="NormeRent")
     equipement = models.ManyToManyField(
-        Equipement, blank=True, related_name="EquipRent"
+        Equipment, blank=True, related_name="EquipRent"
     )
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicRent")
     price = models.FloatField(blank=True, null=True)
@@ -238,7 +240,7 @@ class Rent(models.Model):
         result["description"] = self.description
         result["piece"] = self.piece
         result["chambre"] = self.chambre
-        result["norme"] = self.norme
+        result["norme"] = self.norm
         result["equipement"] = self.equipement
         result["pic"] = self.pic
         result["price"] = self.price
@@ -273,8 +275,8 @@ class Buy(models.Model):
     description = models.CharField(blank=True, null=True, max_length=300)
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
-    norme = models.ManyToManyField(Norme, blank=True, related_name="NormeBuy")
-    equipement = models.ManyToManyField(Equipement, blank=True, related_name="EquipBuy")
+    norm = models.ManyToManyField(Norm, blank=True, related_name="NormeBuy")
+    equipement = models.ManyToManyField(Equipment, blank=True, related_name="EquipBuy")
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicBuy")
     available = models.BooleanField(default=False)
     price = models.FloatField(blank=True, null=True)
@@ -329,7 +331,7 @@ class Buy(models.Model):
         result["description"] = self.description
         result["piece"] = self.piece
         result["chambre"] = self.chambre
-        result["norme"] = self.norme
+        result["norme"] = self.norm
         result["equipement"] = self.equipement
         result["pic"] = self.pic
         result["available"] = self.available
@@ -364,9 +366,9 @@ class BuyPlan(models.Model):
     description = models.CharField(blank=True, null=True, max_length=300)
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
-    norme = models.ManyToManyField(Norme, blank=True, related_name="NormeBuyPlan")
+    norm = models.ManyToManyField(Norm, blank=True, related_name="NormeBuyPlan")
     equipement = models.ManyToManyField(
-        Equipement, blank=True, related_name="EquipBuyPlan"
+        Equipment, blank=True, related_name="EquipBuyPlan"
     )
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicBuyPlan")
     available = models.BooleanField(default=False)
@@ -422,7 +424,7 @@ class BuyPlan(models.Model):
         result["description"] = self.description
         result["piece"] = self.piece
         result["chambre"] = self.chambre
-        result["norme"] = self.norme
+        result["norme"] = self.norm
         result["equipement"] = self.equipement
         result["pic"] = self.pic
         result["available"] = self.available

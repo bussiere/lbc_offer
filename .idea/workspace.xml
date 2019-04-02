@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a66737-7bef-4e5b-87a9-c8d7981d87c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CreateUserSmall.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateUserSmall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Offer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0002_historicalbuy_historicalbuyplan_historicalequipement_historicalnorme_historicalpic_historicalrent_hi.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Offer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Offer/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+            <state relative-caret-position="272">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#29#61#0" expanded="true" />
               </folding>
@@ -28,10 +29,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CreateUserSmall.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="100">
               <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -43,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Offer/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="-287">
+              <caret line="370" column="13" lean-forward="true" selection-start-line="370" selection-start-column="13" selection-end-line="370" selection-end-column="13" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -52,14 +53,21 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Offer/apps.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>toJson():</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>to_json(self):</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -68,9 +76,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Offer/models.py" />
-        <option value="$PROJECT_DIR$/Offer/admin.py" />
         <option value="$PROJECT_DIR$/CreateUserSmall.py" />
+        <option value="$PROJECT_DIR$/Offer/admin.py" />
+        <option value="$PROJECT_DIR$/Offer/models.py" />
       </list>
     </option>
   </component>
@@ -157,12 +165,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554226121961</updated>
-      <workItem from="1554226124333" duration="835000" />
+      <workItem from="1554226124333" duration="4932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="835000" />
+    <option name="totallyTimeSpent" value="4932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
@@ -195,10 +203,23 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Offer/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateUserSmall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Offer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="-287">
+          <caret line="370" column="13" lean-forward="true" selection-start-line="370" selection-start-column="13" selection-end-line="370" selection-end-column="13" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -207,20 +228,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Offer/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#29#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreateUserSmall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

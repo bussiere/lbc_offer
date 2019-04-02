@@ -4,11 +4,11 @@ from django.contrib import admin
 from Engine.actions import export_as_csv_action
 from simple_history.admin import SimpleHistoryAdmin
 from django import forms
-from .models import Seller,Norme,Equipement,Pic,Rent,Buy,BuyPlan
+from .models import Seller,Norm,Equipment,Pic,Rent,Buy,BuyPlan
 
 
 
-class RentForm(forms.ModelForm):
+class Rent_Form(forms.ModelForm):
     station = forms.ModelMultipleChoiceField(queryset=Seller.objects.order_by('name'))
 
     class Meta:
@@ -16,25 +16,28 @@ class RentForm(forms.ModelForm):
         fields = '__all__'
 
 
-class seller_admin(SimpleHistoryAdmin):
+class Seller_Admin(SimpleHistoryAdmin):
     list_display = ("name","contact","phone","email")
     search_fields = ("name","contact","phone","email")
     actions = [export_as_csv_action("CSV Export", fields=["name","contact","phone","email"])]
 
 
 
-class Rent_Admin(SimpleHistoryAdmin):
-    list_display = ("station","line","neighbour","timeTravelS","dateOpen","uuid","modified")
-    search_fields = ("station","line","neighbour","timeTravelS","dateOpen","uuid","modified")
-    actions = [export_as_csv_action("CSV Export", fields=["station","line","neighbour","timeTravelS","dateOpen","uuid","modified"])]
-    form =  RentForm
+class Norm_Admin(SimpleHistoryAdmin):
+    list_display = ("name","value")
+    search_fields = ("name","value")
+    actions = [export_as_csv_action("CSV Export", fields=["name","value"])]
+    #form =  RentForm
 
 
-class Seller_Admin(SimpleHistoryAdmin):
-    list_display = ("name","modified")
-    search_fields = ("name","modified")
-    actions = [export_as_csv_action("CSV Export", fields=["name","modified"])]
 
 
-admin.site.register(Seller, seller_admin)
-#admin.site.register(StationLinkT, StationLinkT_Admin)
+
+class Equipment_Admin(SimpleHistoryAdmin):
+    list_display = ("name","value")
+    search_fields = ("name","value")
+    actions = [export_as_csv_action("CSV Export", fields=["name","value"])]
+
+admin.site.register(Seller, Seller_Admin)
+admin.site.register(Norm, Norm_Admin)
+admin.site.register(Equipment, Equipment_Admin)
