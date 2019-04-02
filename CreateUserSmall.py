@@ -3,7 +3,7 @@ import os
 import django
 
 sys.path.append("../../../OfferGreatParis.settings")
-os.environ["DJANGO_SETTINGS_MODULE"] = "OfferGreatParis.settings.settings"
+os.environ["DJANGO_SETTINGS_MODULE"] = "OfferGreatParis.settings"
 django.setup()
 
 

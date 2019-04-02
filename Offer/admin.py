@@ -8,26 +8,26 @@ from .models import Seller,Norme,Equipement,Pic,Rent,Buy,BuyPlan
 
 
 
-class LineTForm(forms.ModelForm):
-    station = forms.ModelMultipleChoiceField(queryset=Station.objects.order_by('name'))
+class RentForm(forms.ModelForm):
+    station = forms.ModelMultipleChoiceField(queryset=Seller.objects.order_by('name'))
 
     class Meta:
-        model = Line
+        model = Rent
         fields = '__all__'
 
 
-class Station_Line_Admin(SimpleHistoryAdmin):
-    list_display = ("station","line","uuid","modified")
-    search_fields = ("station__name","line__name","uuid","modified")
-    actions = [export_as_csv_action("CSV Export", fields=["station","line","uuid","modified"])]
-    form =  Station_Line_Form
+class seller_admin(SimpleHistoryAdmin):
+    list_display = ("name","contact","phone","email")
+    search_fields = ("name","contact","phone","email")
+    actions = [export_as_csv_action("CSV Export", fields=["name","contact","phone","email"])]
 
 
-class StationLinkT_Admin(SimpleHistoryAdmin):
+
+class Rent_Admin(SimpleHistoryAdmin):
     list_display = ("station","line","neighbour","timeTravelS","dateOpen","uuid","modified")
     search_fields = ("station","line","neighbour","timeTravelS","dateOpen","uuid","modified")
     actions = [export_as_csv_action("CSV Export", fields=["station","line","neighbour","timeTravelS","dateOpen","uuid","modified"])]
-    form =  Station_Line_Form
+    form =  RentForm
 
 
 class Seller_Admin(SimpleHistoryAdmin):
@@ -36,5 +36,5 @@ class Seller_Admin(SimpleHistoryAdmin):
     actions = [export_as_csv_action("CSV Export", fields=["name","modified"])]
 
 
-admin.site.register(Seller, Seller_Admin)
+admin.site.register(Seller, seller_admin)
 #admin.site.register(StationLinkT, StationLinkT_Admin)

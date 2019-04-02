@@ -1,6 +1,10 @@
 from django.db import models
 from django.utils import timezone
 from simple_history.models import HistoricalRecords
+import uuid
+from django.utils import timezone
+import random
+import requests
 
 class Seller(models.Model):
     created = models.DateTimeField(null=True, blank=True, editable=False)
@@ -41,7 +45,7 @@ class Seller(models.Model):
                 pass
         return super(Seller, self).save(*args, **kwargs)
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["created"] = self.created
         result["modified"] = self.modified
@@ -88,7 +92,7 @@ class Norme(models.Model):
                 pass
         return super(Norme, self).save(*args, **kwargs)
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["name"] = self.name
         result["valeur"] = self.valeur
@@ -116,7 +120,7 @@ class Equipement(models.Model):
             self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
         return super(Equipement, self).save(*args, **kwargs)
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["name"] = self.name
         result["valeur"] = self.valeur
@@ -146,7 +150,7 @@ class Pic(models.Model):
 # Create your models here.
 
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["valeur"] = self.valeur
         result["uuid"] = self.uuid
@@ -214,7 +218,7 @@ class Rent(models.Model):
         return super(Rent, self).save(*args, **kwargs)
 
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["catOne"] = self.catOne
         result["catTwo"] = self.catTwo
@@ -305,7 +309,7 @@ class Buy(models.Model):
         return super(Buy, self).save(*args, **kwargs)
 
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["catOne"] = self.catOne
         result["catTwo"] = self.catTwo
@@ -398,7 +402,7 @@ class BuyPlan(models.Model):
         return super(BuyPlan, self).save(*args, **kwargs)
 
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["catOne"] = self.catOne
         result["catTwo"] = self.catTwo
