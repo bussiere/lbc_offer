@@ -6,10 +6,26 @@ from django.utils import timezone
 import random
 import requests
 
+
+class GroupSeller(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
+    name = models.CharField(blank=True, null=True, max_length=200)
+    uuid = models.CharField(blank=True, null=True, max_length=48)
+    history = HistoricalRecords()
+    def __str__(self):
+        return self.name + ":" + str(self.id) 
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
 class Seller(models.Model):
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
+    group = models.ForeignKey(
+        GroupSeller, blank=True, on_delete=models.PROTECT, related_name="Group_Seller",null=True
+    )
     url = models.CharField(blank=True, null=True, max_length=200)
     contact = models.CharField(blank=True, null=True, max_length=200)
     phone = models.CharField(blank=True, null=True, max_length=200)
@@ -22,7 +38,7 @@ class Seller(models.Model):
     uuid = models.CharField(blank=True, null=True, max_length=48)
     history = HistoricalRecords()
     def __str__(self):
-        return self.name + ":" + str(self.id) + ":" + self.codePostal
+        return self.name + ":" + str(self.id) 
 
     def __unicode__(self):
         return self.name + ":" + str(self.id)
@@ -63,6 +79,8 @@ class Seller(models.Model):
         return result
 
 class Norm(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     nameP = (("b", "Big"), ("s", "Small"))
     nameP2 = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
@@ -70,7 +88,7 @@ class Norm(models.Model):
     uuid = models.CharField(blank=True, null=True, max_length=48)
     history = HistoricalRecords()
     def __str__(self):
-        return self.name + ":" + str(self.id) + ":" + self.codePostal
+        return self.name + ":" + str(self.id)
 
     def __unicode__(self):
         return self.name + ":" + str(self.id)
@@ -82,15 +100,6 @@ class Norm(models.Model):
         self.modified = timezone.now()
         if not self.uuid :
             self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
-        if not self.geoHash and (self.gpsLat and self.gpsLong):
-            try :
-                data = {"Lat":self.gpsLat,"Long":self.gpsLong}
-                r = requests.post("http://127.0.0.1:8080/EncodeGeoHash/",json=data)
-                r = r.json()
-                self.geoHash = r["GeoHash"]
-            except Exception as e:
-                print(e)
-                pass
         return super(Norm, self).save(*args, **kwargs)
 
     def to_json(self):
@@ -101,6 +110,8 @@ class Norm(models.Model):
         return result
 
 class Equipment(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     nameP = (("b", "Big"), ("s", "Small"))
     nameP2 = (("b", "Big"), ("s", "Small"))
     name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
@@ -130,8 +141,12 @@ class Equipment(models.Model):
         return result
 
 class Pic(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     nameP = (("b", "Big"), ("s", "Small"))
-    value = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
+    value = models.TextField(choices=nameP, blank=True, null=True)
+    name = models.CharField(max_length=300, blank=True, null=True)
+    type = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
     history = HistoricalRecords()
     def __str__(self):
@@ -159,6 +174,8 @@ class Pic(models.Model):
         return result
 
 class Rent(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
     catOne = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
@@ -182,7 +199,7 @@ class Rent(models.Model):
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
     norm = models.ManyToManyField(Norm, blank=True, related_name="NormeRent")
-    equipement = models.ManyToManyField(
+    equipment = models.ManyToManyField(
         Equipment, blank=True, related_name="EquipRent"
     )
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicRent")
@@ -253,6 +270,8 @@ class Rent(models.Model):
         return result
 
 class Buy(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
     catOne = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
@@ -344,6 +363,8 @@ class Buy(models.Model):
         return result
 
 class BuyPlan(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
     catOne = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
