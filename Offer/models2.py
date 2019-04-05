@@ -1,10 +1,39 @@
 from django.db import models
 from django.utils import timezone
+from simple_history.models import HistoricalRecords
+import uuid
+from django.utils import timezone
+import random
+import requests
+
+
+class GroupSeller(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
+    name = models.CharField(blank=True, null=True, max_length=200)
+    uuid = models.CharField(blank=True, null=True, max_length=48)
+    history = HistoricalRecords()
+    def __str__(self):
+        return self.name + ":" + str(self.id) 
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["uuid"] = self.uuid
+        return result
 
 class Seller(models.Model):
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
+    group = models.ForeignKey(
+        GroupSeller, blank=True, on_delete=models.PROTECT, related_name="Group_Seller",null=True
+    )
     url = models.CharField(blank=True, null=True, max_length=200)
     contact = models.CharField(blank=True, null=True, max_length=200)
     phone = models.CharField(blank=True, null=True, max_length=200)
@@ -15,8 +44,9 @@ class Seller(models.Model):
     gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    history = HistoricalRecords()
     def __str__(self):
-        return self.name + ":" + str(self.id) + ":" + self.codePostal
+        return self.name + ":" + str(self.id) 
 
     def __unicode__(self):
         return self.name + ":" + str(self.id)
@@ -39,7 +69,7 @@ class Seller(models.Model):
                 pass
         return super(Seller, self).save(*args, **kwargs)
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["created"] = self.created
         result["modified"] = self.modified
@@ -56,49 +86,33 @@ class Seller(models.Model):
         result["uuid"] = self.uuid
         return result
 
-class Norme(models.Model):
-    nameP = (("b", "Big"), ("s", "Small"))
-    name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
-    valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
-    uuid = models.CharField(blank=True, null=True, max_length=48)
-    def __str__(self):
-        return self.name + ":" + str(self.id) + ":" + self.codePostal
-
-    def __unicode__(self):
-        return self.name + ":" + str(self.id)
-
-    def save(self, *args, **kwargs):
-        """ On save, update timestamps """
-        if not self.id:
-            self.created = timezone.now()
-        self.modified = timezone.now()
-        if not self.uuid :
-            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
-        if not self.geoHash and (self.gpsLat and self.gpsLong):
-            try :
-                data = {"Lat":self.gpsLat,"Long":self.gpsLong}
-                r = requests.post("http://127.0.0.1:8080/EncodeGeoHash/",json=data)
-                r = r.json()
-                self.geoHash = r["GeoHash"]
-            except Exception as e:
-                print(e)
-                pass
-        return super(Norme, self).save(*args, **kwargs)
 
     def toJson():
         result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
         result["name"] = self.name
-        result["valeur"] = self.valeur
+        result["group"] = self.group
+        result["url"] = self.url
+        result["contact"] = self.contact
+        result["phone"] = self.phone
+        result["email"] = self.email
+        result["note"] = self.note
+        result["adresse_uuid"] = self.adresse_uuid
+        result["geoHash"] = self.geoHash
+        result["gpsLat"] = self.gpsLat
+        result["gpsLong"] = self.gpsLong
         result["uuid"] = self.uuid
         return result
 
-class Equipement(models.Model):
-    nameP = (("b", "Big"), ("s", "Small"))
-    name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
-    valeur = models.CharField(max_length=100, choices=nameP, blank=True, null=True)
-    uuid = models.CharField(blank=True, null=True, max_length=48)
+class NormName(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
+    name = models.CharField(max_length=256, blank=True, null=True)
+    uuid = models.CharField(blank=True, null=True, max_length=48)    
+    history = HistoricalRecords()
     def __str__(self):
-        return self.name + ":" + str(self.id) + ":" + self.codePostal
+        return self.name + ":" + str(self.id) 
 
     def __unicode__(self):
         return self.name + ":" + str(self.id)
@@ -110,19 +124,136 @@ class Equipement(models.Model):
         self.modified = timezone.now()
         if not self.uuid :
             self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
-        return super(Equipement, self).save(*args, **kwargs)
+        return super(NormName, self).save(*args, **kwargs)
+
 
     def toJson():
         result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
         result["name"] = self.name
-        result["valeur"] = self.valeur
+        result["uuid"] = self.uuid
+        return result
+
+class Norm(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
+    name = models.ForeignKey(
+        NormName, blank=True,null=True, on_delete=models.PROTECT, related_name="SellerRent"
+    )
+    value = models.CharField(max_length=256, blank=True, null=True)
+    uuid = models.CharField(blank=True, null=True, max_length=48)
+    history = HistoricalRecords()
+    def __str__(self):
+        return self.name + ":" + str(self.id)
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999) )
+        return super(Norm, self).save(*args, **kwargs)
+
+    def to_json(self):
+        result = {}
+        result["name"] = self.name
+        result["value"] = self.value
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["value"] = self.value
+        result["uuid"] = self.uuid
+        return result
+
+class EquipmentName(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
+    name = models.CharField(max_length=256, blank=True, null=True)
+    uuid = models.CharField(blank=True, null=True, max_length=48)    
+    history = HistoricalRecords()
+    def __str__(self):
+        return self.name + ":" + str(self.id) 
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
+        return super(EquipmentName, self).save(*args, **kwargs)
+
+
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["uuid"] = self.uuid
+        return result
+
+class Equipment(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
+    name = models.ForeignKey(
+        EquipmentName, blank=True,null=True, on_delete=models.PROTECT, related_name="SellerRent"
+    )
+    value = models.CharField(max_length=255, blank=True, null=True)
+    uuid = models.CharField(blank=True, null=True, max_length=48)    
+    history = HistoricalRecords()
+    def __str__(self):
+        return self.name + ":" + str(self.id) 
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
+        return super(Equipment, self).save(*args, **kwargs)
+
+    def to_json(self):
+        result = {}
+        result["name"] = self.name
+        result["value"] = self.value
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["value"] = self.value
         result["uuid"] = self.uuid
         return result
 
 class Pic(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     nameP = (("b", "Big"), ("s", "Small"))
-    valeur = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
+    value = models.TextField(choices=nameP, blank=True, null=True)
+    name = models.CharField(max_length=300, blank=True, null=True)
+    type = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.codePostal
 
@@ -141,13 +272,25 @@ class Pic(models.Model):
 # Create your models here.
 
 
+    def to_json(self):
+        result = {}
+        result["value"] = self.value
+        result["uuid"] = self.uuid
+        return result
+
     def toJson():
         result = {}
-        result["valeur"] = self.valeur
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["value"] = self.value
+        result["name"] = self.name
+        result["type"] = self.type
         result["uuid"] = self.uuid
         return result
 
 class Rent(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
     catOne = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
@@ -170,9 +313,9 @@ class Rent(models.Model):
     description = models.CharField(blank=True, null=True, max_length=300)
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
-    norme = models.ManyToManyField(Norme, blank=True, related_name="NormeRent")
-    equipement = models.ManyToManyField(
-        Equipement, blank=True, related_name="EquipRent"
+    norm = models.ManyToManyField(Norm, blank=True, related_name="NormeRent")
+    equipment = models.ManyToManyField(
+        Equipment, blank=True, related_name="EquipRent"
     )
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicRent")
     price = models.FloatField(blank=True, null=True)
@@ -182,6 +325,7 @@ class Rent(models.Model):
     score = models.IntegerField(blank=True, null=True)
     origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    history = HistoricalRecords()
     
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.adresse
@@ -208,7 +352,7 @@ class Rent(models.Model):
         return super(Rent, self).save(*args, **kwargs)
 
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["catOne"] = self.catOne
         result["catTwo"] = self.catTwo
@@ -228,7 +372,7 @@ class Rent(models.Model):
         result["description"] = self.description
         result["piece"] = self.piece
         result["chambre"] = self.chambre
-        result["norme"] = self.norme
+        result["norme"] = self.norm
         result["equipement"] = self.equipement
         result["pic"] = self.pic
         result["price"] = self.price
@@ -240,7 +384,43 @@ class Rent(models.Model):
         result["uuid"] = self.uuid
         return result
 
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["dateAd"] = self.dateAd
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["gpsLat"] = self.gpsLat
+        result["gpsLong"] = self.gpsLong
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse_uuid"] = self.adresse_uuid
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norm"] = self.norm
+        result["equipment"] = self.equipment
+        result["pic"] = self.pic
+        result["price"] = self.price
+        result["available"] = self.available
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["origin"] = self.origin
+        result["uuid"] = self.uuid
+        return result
+
 class Buy(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
     catOne = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
@@ -263,8 +443,8 @@ class Buy(models.Model):
     description = models.CharField(blank=True, null=True, max_length=300)
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
-    norme = models.ManyToManyField(Norme, blank=True, related_name="NormeBuy")
-    equipement = models.ManyToManyField(Equipement, blank=True, related_name="EquipBuy")
+    norm = models.ManyToManyField(Norm, blank=True, related_name="NormeBuy")
+    equipment = models.ManyToManyField(Equipment, blank=True, related_name="EquipBuy")
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicBuy")
     available = models.BooleanField(default=False)
     price = models.FloatField(blank=True, null=True)
@@ -273,6 +453,7 @@ class Buy(models.Model):
     score = models.IntegerField(blank=True, null=True)
     origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.codePostal
 
@@ -298,7 +479,7 @@ class Buy(models.Model):
         return super(Buy, self).save(*args, **kwargs)
 
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["catOne"] = self.catOne
         result["catTwo"] = self.catTwo
@@ -318,7 +499,7 @@ class Buy(models.Model):
         result["description"] = self.description
         result["piece"] = self.piece
         result["chambre"] = self.chambre
-        result["norme"] = self.norme
+        result["norme"] = self.norm
         result["equipement"] = self.equipement
         result["pic"] = self.pic
         result["available"] = self.available
@@ -330,7 +511,43 @@ class Buy(models.Model):
         result["uuid"] = self.uuid
         return result
 
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["dateAd"] = self.dateAd
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["gpsLat"] = self.gpsLat
+        result["gpsLong"] = self.gpsLong
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse_uuid"] = self.adresse_uuid
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norm"] = self.norm
+        result["equipment"] = self.equipment
+        result["pic"] = self.pic
+        result["available"] = self.available
+        result["price"] = self.price
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["origin"] = self.origin
+        result["uuid"] = self.uuid
+        return result
+
 class BuyPlan(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
     catOne = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
@@ -353,9 +570,9 @@ class BuyPlan(models.Model):
     description = models.CharField(blank=True, null=True, max_length=300)
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
-    norme = models.ManyToManyField(Norme, blank=True, related_name="NormeBuyPlan")
-    equipement = models.ManyToManyField(
-        Equipement, blank=True, related_name="EquipBuyPlan"
+    norm = models.ManyToManyField(Norm, blank=True, related_name="NormeBuyPlan")
+    equipment = models.ManyToManyField(
+        Equipment, blank=True, related_name="EquipBuyPlan"
     )
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicBuyPlan")
     available = models.BooleanField(default=False)
@@ -365,6 +582,7 @@ class BuyPlan(models.Model):
     score = models.IntegerField(blank=True, null=True)
     origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
+    history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.codePostal
 
@@ -390,7 +608,7 @@ class BuyPlan(models.Model):
         return super(BuyPlan, self).save(*args, **kwargs)
 
 
-    def toJson():
+    def to_json(self):
         result = {}
         result["catOne"] = self.catOne
         result["catTwo"] = self.catTwo
@@ -410,8 +628,42 @@ class BuyPlan(models.Model):
         result["description"] = self.description
         result["piece"] = self.piece
         result["chambre"] = self.chambre
-        result["norme"] = self.norme
+        result["norme"] = self.norm
         result["equipement"] = self.equipement
+        result["pic"] = self.pic
+        result["available"] = self.available
+        result["price"] = self.price
+        result["ref1"] = self.ref1
+        result["ref2"] = self.ref2
+        result["score"] = self.score
+        result["origin"] = self.origin
+        result["uuid"] = self.uuid
+        return result
+
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["catOne"] = self.catOne
+        result["catTwo"] = self.catTwo
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["dateAd"] = self.dateAd
+        result["name"] = self.name
+        result["geoHash"] = self.geoHash
+        result["gpsLat"] = self.gpsLat
+        result["gpsLong"] = self.gpsLong
+        result["m2"] = self.m2
+        result["m2_1"] = self.m2_1
+        result["adresse_uuid"] = self.adresse_uuid
+        result["seller"] = self.seller
+        result["urlOffer"] = self.urlOffer
+        result["note"] = self.note
+        result["description"] = self.description
+        result["piece"] = self.piece
+        result["chambre"] = self.chambre
+        result["norm"] = self.norm
+        result["equipment"] = self.equipment
         result["pic"] = self.pic
         result["available"] = self.available
         result["price"] = self.price

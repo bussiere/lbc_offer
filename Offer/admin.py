@@ -4,12 +4,12 @@ from django.contrib import admin
 from Engine.actions import export_as_csv_action
 from simple_history.admin import SimpleHistoryAdmin
 from django import forms
-from .models import Seller,Norm,Equipment,Pic,Rent,Buy,BuyPlan,GroupSeller
+from .models import Seller,Norm,Equipment,Pic,Rent,Buy,BuyPlan,GroupSeller,NormName,EquipmentName
 
 #https://stackoverflow.com/questions/14597937/show-multiple-choices-to-admin-in-django
 
 class Rent_Form(forms.ModelForm):
-    seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'))
+    seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'),required=False)
     norm = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple,queryset=Norm.objects.order_by('name'),required=False)
     equipment = forms.ModelMultipleChoiceField(queryset=Equipment.objects.order_by('name'),required=False)
     pic = forms.ModelMultipleChoiceField(queryset=Pic.objects.order_by('name'),required=False)
@@ -20,7 +20,7 @@ class Rent_Form(forms.ModelForm):
 
 
 class BuyPlan_Form(forms.ModelForm):
-    seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'))
+    seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'),required=False)
     norm = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple,queryset=Norm.objects.order_by('name'),required=False)
     equipment = forms.ModelMultipleChoiceField(queryset=Equipment.objects.order_by('name'),required=False)
     pic = forms.ModelMultipleChoiceField(queryset=Pic.objects.order_by('name'),required=False)
@@ -29,7 +29,7 @@ class BuyPlan_Form(forms.ModelForm):
         fields = '__all__'
 
 class Buy_Form(forms.ModelForm):
-    seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'))
+    seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'),required=False)
     norm = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple,queryset=Norm.objects.order_by('name'),required=False)
     equipment = forms.ModelMultipleChoiceField(queryset=Equipment.objects.order_by('name'),required=False)
     pic = forms.ModelMultipleChoiceField(queryset=Pic.objects.order_by('name'),required=False)
@@ -47,7 +47,10 @@ class Seller_Admin(SimpleHistoryAdmin):
     search_fields = ("name","created","contact","phone","email")
     actions = [export_as_csv_action("CSV Export", fields=["name","created","contact","phone","email"])]
 
-
+class NormName_Admin(SimpleHistoryAdmin):
+    list_display = ("name","created")
+    search_fields = ("name","created")
+    actions = [export_as_csv_action("CSV Export", fields=["name","created"])]
 
 class Norm_Admin(SimpleHistoryAdmin):
     list_display = ("name","created","value")
@@ -55,7 +58,10 @@ class Norm_Admin(SimpleHistoryAdmin):
     actions = [export_as_csv_action("CSV Export", fields=["name","created","value"])]
 
 
-
+class EquipmentName_Admin(SimpleHistoryAdmin):
+    list_display = ("name","created")
+    search_fields = ("name","created")
+    actions = [export_as_csv_action("CSV Export", fields=["name","created"])]
 
 
 class Equipment_Admin(SimpleHistoryAdmin):
@@ -92,7 +98,9 @@ class Buy_Admin(SimpleHistoryAdmin):
 
 admin.site.register(GroupSeller, GroupSeller_Admin)
 admin.site.register(Seller, Seller_Admin)
+admin.site.register(NormName, NormName_Admin)
 admin.site.register(Norm, Norm_Admin)
+admin.site.register(EquipmentName, EquipmentName_Admin)
 admin.site.register(Equipment, Equipment_Admin)
 admin.site.register(Pic, Pic_Admin)
 admin.site.register(Rent, Rent_Admin)

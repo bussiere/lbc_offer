@@ -78,13 +78,45 @@ class Seller(models.Model):
         result["uuid"] = self.uuid
         return result
 
+
+class NormName(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
+    name = models.CharField(max_length=256, blank=True, null=True)
+    uuid = models.CharField(blank=True, null=True, max_length=48)    
+    history = HistoricalRecords()
+    def __str__(self):
+        return self.name + ":" + str(self.id) 
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
+        return super(NormName, self).save(*args, **kwargs)
+    
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["uuid"] = self.uuid
+        return result
+
+
+
 class Norm(models.Model):
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
-    nameP = (("b", "Big"), ("s", "Small"))
-    nameP2 = (("b", "Big"), ("s", "Small"))
-    name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
-    value = models.CharField(max_length=100, choices=nameP2, blank=True, null=True)
+    name = models.ForeignKey(
+        NormName, blank=True,null=True, on_delete=models.PROTECT, related_name="SellerRent"
+    )
+    value = models.CharField(max_length=256, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
     history = HistoricalRecords()
     def __str__(self):
@@ -109,17 +141,47 @@ class Norm(models.Model):
         result["uuid"] = self.uuid
         return result
 
-class Equipment(models.Model):
+class EquipmentName(models.Model):
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
-    nameP = (("b", "Big"), ("s", "Small"))
-    nameP2 = (("b", "Big"), ("s", "Small"))
-    name = models.CharField(max_length=1, choices=nameP, blank=True, null=True)
-    value = models.CharField(max_length=100, choices=nameP2, blank=True, null=True)
+    name = models.CharField(max_length=256, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)    
     history = HistoricalRecords()
     def __str__(self):
-        return self.name + ":" + str(self.id) + ":" + self.codePostal
+        return self.name + ":" + str(self.id) 
+
+    def __unicode__(self):
+        return self.name + ":" + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """ On save, update timestamps """
+        if not self.id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        if not self.uuid :
+            self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
+        return super(EquipmentName, self).save(*args, **kwargs)
+        
+    def toJson():
+        result = {}
+        result["created"] = self.created
+        result["modified"] = self.modified
+        result["name"] = self.name
+        result["uuid"] = self.uuid
+        return result
+
+
+class Equipment(models.Model):
+    created = models.DateTimeField(null=True, blank=True, editable=False)
+    modified = models.DateTimeField(null=True, blank=True)
+    name = models.ForeignKey(
+        EquipmentName, blank=True,null=True, on_delete=models.PROTECT, related_name="SellerRent"
+    )
+    value = models.CharField(max_length=255, blank=True, null=True)
+    uuid = models.CharField(blank=True, null=True, max_length=48)    
+    history = HistoricalRecords()
+    def __str__(self):
+        return self.name + ":" + str(self.id) 
 
     def __unicode__(self):
         return self.name + ":" + str(self.id)
