@@ -8,7 +8,6 @@ from .models import Seller,Norm,Equipment,Pic,Rent,Buy,BuyPlan,GroupSeller
 
 #https://stackoverflow.com/questions/14597937/show-multiple-choices-to-admin-in-django
 
-
 class Rent_Form(forms.ModelForm):
     seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'))
     norm = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple,queryset=Norm.objects.order_by('name'),required=False)
@@ -17,6 +16,9 @@ class Rent_Form(forms.ModelForm):
     class Meta:
         model = Rent
         fields = '__all__'
+    def __init__(self, *args, **kwargs):
+        super(Rent_Form, self).__init__(*args, **kwargs)
+        self.fields['norm'].widget = django.contrib.admin.widgets.RelatedFieldWidgetWrapper()
 
 
 class GroupSeller_Admin(SimpleHistoryAdmin):
@@ -60,9 +62,24 @@ class Rent_Admin(SimpleHistoryAdmin):
     form =  Rent_Form
 
 
+class BuyPlan_Admin(SimpleHistoryAdmin):
+    list_display = ("name","created","catOne","catTwo")
+    search_fields = ("name","created","catOne","catTwo")
+    actions = [export_as_csv_action("CSV Export", fields=["name","created","catOne","catTwo"])]
+    form =  Rent_Form
+
+class Buy_Admin(SimpleHistoryAdmin):
+    list_display = ("name","created","catOne","catTwo")
+    search_fields = ("name","created","catOne","catTwo")
+    actions = [export_as_csv_action("CSV Export", fields=["name","created","catOne","catTwo"])]
+    form =  Rent_Form
+
 admin.site.register(GroupSeller, GroupSeller_Admin)
 admin.site.register(Seller, Seller_Admin)
 admin.site.register(Norm, Norm_Admin)
 admin.site.register(Equipment, Equipment_Admin)
 admin.site.register(Pic, Pic_Admin)
 admin.site.register(Rent, Rent_Admin)
+admin.site.register(BuyPlan, BuyPlan_Admin)
+admin.site.register(Buy, Buy_Admin)
+
