@@ -16,10 +16,26 @@ class Rent_Form(forms.ModelForm):
     class Meta:
         model = Rent
         fields = '__all__'
-    def __init__(self, *args, **kwargs):
-        super(Rent_Form, self).__init__(*args, **kwargs)
-        self.fields['norm'].widget = django.contrib.admin.widgets.RelatedFieldWidgetWrapper()
 
+
+
+class BuyPlan_Form(forms.ModelForm):
+    seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'))
+    norm = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple,queryset=Norm.objects.order_by('name'),required=False)
+    equipment = forms.ModelMultipleChoiceField(queryset=Equipment.objects.order_by('name'),required=False)
+    pic = forms.ModelMultipleChoiceField(queryset=Pic.objects.order_by('name'),required=False)
+    class Meta:
+        model = BuyPlan
+        fields = '__all__'
+
+class Buy_Form(forms.ModelForm):
+    seller = forms.ModelChoiceField(queryset=Seller.objects.order_by('name'))
+    norm = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple,queryset=Norm.objects.order_by('name'),required=False)
+    equipment = forms.ModelMultipleChoiceField(queryset=Equipment.objects.order_by('name'),required=False)
+    pic = forms.ModelMultipleChoiceField(queryset=Pic.objects.order_by('name'),required=False)
+    class Meta:
+        model = Buy
+        fields = '__all__'
 
 class GroupSeller_Admin(SimpleHistoryAdmin):
     list_display = ("name","created")
@@ -66,13 +82,13 @@ class BuyPlan_Admin(SimpleHistoryAdmin):
     list_display = ("name","created","catOne","catTwo")
     search_fields = ("name","created","catOne","catTwo")
     actions = [export_as_csv_action("CSV Export", fields=["name","created","catOne","catTwo"])]
-    form =  Rent_Form
+    form =  BuyPlan_Form
 
 class Buy_Admin(SimpleHistoryAdmin):
     list_display = ("name","created","catOne","catTwo")
     search_fields = ("name","created","catOne","catTwo")
     actions = [export_as_csv_action("CSV Export", fields=["name","created","catOne","catTwo"])]
-    form =  Rent_Form
+    form =  Buy_Form
 
 admin.site.register(GroupSeller, GroupSeller_Admin)
 admin.site.register(Seller, Seller_Admin)

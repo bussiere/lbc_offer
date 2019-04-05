@@ -295,7 +295,7 @@ class Buy(models.Model):
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
     norm = models.ManyToManyField(Norm, blank=True, related_name="NormeBuy")
-    equipement = models.ManyToManyField(Equipment, blank=True, related_name="EquipBuy")
+    equipment = models.ManyToManyField(Equipment, blank=True, related_name="EquipBuy")
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicBuy")
     available = models.BooleanField(default=False)
     price = models.FloatField(blank=True, null=True)
@@ -388,7 +388,7 @@ class BuyPlan(models.Model):
     piece = models.IntegerField(blank=True, null=True)
     chambre = models.IntegerField(blank=True, null=True)
     norm = models.ManyToManyField(Norm, blank=True, related_name="NormeBuyPlan")
-    equipement = models.ManyToManyField(
+    equipment = models.ManyToManyField(
         Equipment, blank=True, related_name="EquipBuyPlan"
     )
     pic = models.ManyToManyField(Pic, blank=True, related_name="PicBuyPlan")
