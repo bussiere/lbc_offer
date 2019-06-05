@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/OfferGreatParis/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+              <caret line="86" column="17" lean-forward="true" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Offer/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+            <state relative-caret-position="473">
+              <caret line="465" column="66" selection-start-line="465" selection-start-column="66" selection-end-line="465" selection-end-column="66" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -69,11 +69,13 @@
       <find>toJson():</find>
       <find />
       <find>SimpleHistoryAdmin</find>
+      <find>toJson()</find>
     </findStrings>
     <replaceStrings>
       <replace>to_json(self):</replace>
       <replace />
       <replace>admin.ModelAdmin</replace>
+      <replace>toJson(self)</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -179,12 +181,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554226121961</updated>
       <workItem from="1554226124333" duration="4932000" />
-      <workItem from="1559762828371" duration="447000" />
+      <workItem from="1559762828371" duration="1490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5379000" />
+    <option name="totallyTimeSpent" value="6422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="36" width="1920" height="1044" extended-state="6" />
@@ -230,13 +232,6 @@
     <entry file="file://$PROJECT_DIR$/Offer/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/OfferGreatParis/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Offer/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1115">
@@ -247,10 +242,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OfferGreatParis/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="86" column="17" lean-forward="true" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Offer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+        <state relative-caret-position="473">
+          <caret line="465" column="66" selection-start-line="465" selection-start-column="66" selection-end-line="465" selection-end-column="66" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
