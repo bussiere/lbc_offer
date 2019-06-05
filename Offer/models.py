@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from simple_#history.models import HistoricalRecords
+#from simple_#history.models import HistoricalRecords
 import uuid
 from django.utils import timezone
 import random
@@ -100,7 +100,7 @@ class NormName(models.Model):
             self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
         return super(NormName, self).save(*args, **kwargs)
     
-    def toJson():
+    def toJson(self):
         result = {}
         result["created"] = self.created
         result["modified"] = self.modified
@@ -162,7 +162,7 @@ class EquipmentName(models.Model):
             self.uuid = str(uuid.uuid4().hex) +str(random.randint(1000,9999))
         return super(EquipmentName, self).save(*args, **kwargs)
         
-    def toJson():
+    def toJson(self):
         result = {}
         result["created"] = self.created
         result["modified"] = self.modified
