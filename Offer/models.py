@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from simple_history.models import HistoricalRecords
+from simple_#history.models import HistoricalRecords
 import uuid
 from django.utils import timezone
 import random
@@ -12,7 +12,7 @@ class GroupSeller(models.Model):
     modified = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
     uuid = models.CharField(blank=True, null=True, max_length=48)
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) 
 
@@ -36,7 +36,7 @@ class Seller(models.Model):
     gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     uuid = models.CharField(blank=True, null=True, max_length=48)
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) 
 
@@ -84,7 +84,7 @@ class NormName(models.Model):
     modified = models.DateTimeField(null=True, blank=True)
     name = models.CharField(max_length=256, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)    
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) 
 
@@ -118,7 +118,7 @@ class Norm(models.Model):
     )
     value = models.CharField(max_length=256, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id)
 
@@ -146,7 +146,7 @@ class EquipmentName(models.Model):
     modified = models.DateTimeField(null=True, blank=True)
     name = models.CharField(max_length=256, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)    
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) 
 
@@ -179,7 +179,7 @@ class Equipment(models.Model):
     )
     value = models.CharField(max_length=255, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)    
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) 
 
@@ -210,7 +210,7 @@ class Pic(models.Model):
     name = models.CharField(max_length=300, blank=True, null=True)
     type = models.CharField(max_length=300, choices=nameP, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.codePostal
 
@@ -272,7 +272,7 @@ class Rent(models.Model):
     score = models.IntegerField(blank=True, null=True)
     origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.adresse
@@ -366,7 +366,7 @@ class Buy(models.Model):
     score = models.IntegerField(blank=True, null=True)
     origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.codePostal
 
@@ -461,7 +461,7 @@ class BuyPlan(models.Model):
     score = models.IntegerField(blank=True, null=True)
     origin = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(blank=True, null=True, max_length=48)
-    history = HistoricalRecords()
+    #history = HistoricalRecords()
     def __str__(self):
         return self.name + ":" + str(self.id) + ":" + self.codePostal
 
