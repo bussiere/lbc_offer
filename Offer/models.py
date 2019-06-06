@@ -438,6 +438,7 @@ class BuyPlan(models.Model):
     geoHash = models.CharField(blank=True, null=True, max_length=200)
     gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    commune = models.CharField(blank=True, null=True, max_length=120)
     postal_code = models.CharField(blank=True, null=True, max_length=10)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
