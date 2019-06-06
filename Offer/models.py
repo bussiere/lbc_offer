@@ -463,7 +463,7 @@ class BuyPlan(models.Model):
     uuid = models.CharField(blank=True, null=True, max_length=48)
     #history = HistoricalRecords()
     def __str__(self):
-        return self.name + ":" + str(self.id) + ":" + self.geoHash
+        return self.name + ":" + str(self.id) + ":" + str(self.geoHash)
 
     def __unicode__(self):
         return self.name + ":" + str(self.id)
