@@ -78,9 +78,9 @@ class Pic_Admin(admin.ModelAdmin):
 
 
 class Rent_Admin(admin.ModelAdmin):
-    list_display = ("name","created","catOne","catTwo")
-    search_fields = ("name","created","catOne","catTwo")
-    actions = [export_as_csv_action("CSV Export", fields=["name","created","catOne","catTwo"])]
+    list_display = ("name","created","cat_one","cat_two","price","m2")
+    search_fields = ("name","created","cat_one","cat-two","price","m2")
+    actions = [export_as_csv_action("CSV Export", fields=["name","created","cat_one","cat_two","price","m2"])]
     form =  Rent_Form
 
 
@@ -91,9 +91,9 @@ class BuyPlan_Admin(admin.ModelAdmin):
     form =  BuyPlan_Form
 
 class Buy_Admin(admin.ModelAdmin):
-    list_display = ("name","created","catOne","catTwo")
-    search_fields = ("name","created","catOne","catTwo")
-    actions = [export_as_csv_action("CSV Export", fields=["name","created","catOne","catTwo"])]
+    list_display = ("name","created","cat_one","cat_two","price","m2")
+    search_fields = ("name","created","cat_one","cat-two","price","m2")
+    actions = [export_as_csv_action("CSV Export", fields=["name","created","cat_one","cat_two","price","m2"])]
     form =  Buy_Form
 
 admin.site.register(GroupSeller, GroupSeller_Admin)

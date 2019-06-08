@@ -238,24 +238,24 @@ class Pic(models.Model):
 class Rent(models.Model):
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
-    Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
-    Cat_Two = (("b", "Big"), ("s", "Small"))
-    catOne = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
-    catTwo = models.CharField(max_length=1, choices=Cat_Two, blank=True, null=True)
+    cat_one_c = (("p", "Police"), ("g", "Gendarmerie"))
+    cat_two_c = (("b", "Big"), ("s", "Small"))
+    cat_one = models.CharField(max_length=1, choices=cat_one_c, blank=True, null=True)
+    cat_two = models.CharField(max_length=1, choices=cat_two_c, blank=True, null=True)
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
-    dateAd = models.DateTimeField(null=True, blank=True)
+    date_ad = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
-    geoHash = models.CharField(blank=True, null=True, max_length=200)
-    gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
-    gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    geohash = models.CharField(blank=True, null=True, max_length=200)
+    gps_lat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    gps_long = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
     adresse_uuid = models.CharField(blank=True, null=True, max_length=48)
     seller = models.ForeignKey(
         Seller, blank=True, on_delete=models.PROTECT, related_name="SellerRent"
     )
-    urlOffer = models.CharField(blank=True, null=True, max_length=500)
+    url_offer = models.CharField(blank=True, null=True, max_length=500)
     note = models.CharField(blank=True, null=True, max_length=200)
     description = models.CharField(blank=True, null=True, max_length=300)
     piece = models.IntegerField(blank=True, null=True)
@@ -301,8 +301,8 @@ class Rent(models.Model):
 
     def to_json(self):
         result = {}
-        result["catOne"] = self.catOne
-        result["catTwo"] = self.catTwo
+        result["catOne"] = self.cat_one
+        result["catTwo"] = self.cat_two
         result["created"] = self.created
         result["modified"] = self.modified
         result["dateAd"] = self.dateAd
@@ -336,22 +336,22 @@ class Buy(models.Model):
     modified = models.DateTimeField(null=True, blank=True)
     Cat_One = (("p", "Police"), ("g", "Gendarmerie"))
     Cat_Two = (("b", "Big"), ("s", "Small"))
-    catOne = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
-    catTwo = models.CharField(max_length=1, choices=Cat_Two, blank=True, null=True)
+    cat_one = models.CharField(max_length=1, choices=Cat_One, blank=True, null=True)
+    cat_two = models.CharField(max_length=1, choices=Cat_Two, blank=True, null=True)
     created = models.DateTimeField(null=True, blank=True, editable=False)
     modified = models.DateTimeField(null=True, blank=True)
-    dateAd = models.DateTimeField(null=True, blank=True)
+    date_ad = models.DateTimeField(null=True, blank=True)
     name = models.CharField(blank=True, null=True, max_length=200)
-    geoHash = models.CharField(blank=True, null=True, max_length=200)
-    gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
-    gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    geohash = models.CharField(blank=True, null=True, max_length=200)
+    gps_lat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    gps_long = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     m2 = models.IntegerField(blank=True, null=True)
     m2_1 = models.IntegerField(blank=True, null=True)
     adresse_uuid = models.CharField(blank=True, null=True, max_length=48)
     seller = models.ForeignKey(
         Seller, blank=True, on_delete=models.PROTECT, related_name="SellerBuy"
     )
-    urlOffer = models.CharField(blank=True, null=True, max_length=500)
+    url_offer = models.CharField(blank=True, null=True, max_length=500)
     note = models.CharField(blank=True, null=True, max_length=200)
     description = models.CharField(blank=True, null=True, max_length=300)
     piece = models.IntegerField(blank=True, null=True)
