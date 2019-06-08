@@ -7,6 +7,7 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/jmoiron/sqlx"
+	"github.com/lib/pq"
 	_	"github.com/lib/pq"
 	"strings"
 	"time"
@@ -97,7 +98,35 @@ type RawOfferLbc struct {
 
 
 type OfferDB struct {
-	
+	Id int `db:"id"`
+	Modified      pq.NullTime    `db:"modified"`
+	Created       pq.NullTime    `db:"created"`
+	Uuid          sql.NullString `db:"uuid"`
+	Name sql.NullString `db:"name"`
+	GeohashFile sql.NullString `db:"geohash"`
+	GpsLatFile sql.NullFloat64 `db:"gps_lat"`
+	GpsLongFile sql.NullFloat64 `db:"gps_long"`
+
+	cat_one character varying(1),
+	cat_two character varying(1),
+
+	date_ad timestamp with time zone,
+	name character varying(200),
+	m2 integer,
+	m2_1 integer,
+	adresse_uuid character varying(48),
+	url_offer character varying(500),
+	note character varying(200),
+	description character varying(300),
+	piece integer,
+	chambre integer,
+	available boolean NOT NULL,
+	price double precision,
+	ref1 character varying(200),
+	ref2 character varying(200),
+	score integer,
+	origin character varying(64),
+	seller_id integer NOT NULL,
 }
 
 func convertLbc(c *gin.Context) {
