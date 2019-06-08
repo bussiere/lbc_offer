@@ -1,0 +1,2010 @@
+Watching for file changes with StatReloader
+[05/Jun/2019 20:04:09] "GET /admin HTTP/1.1" 301 0
+[05/Jun/2019 20:04:10] "GET /admin/ HTTP/1.1" 302 0
+[05/Jun/2019 20:04:11] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[05/Jun/2019 20:04:11] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[05/Jun/2019 20:04:12] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[05/Jun/2019 20:04:12] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[05/Jun/2019 20:04:12] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+Not Found: /favicon.ico
+[05/Jun/2019 20:04:14] "GET /favicon.ico HTTP/1.1" 404 1985
+[05/Jun/2019 20:04:14] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[05/Jun/2019 20:04:15] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[05/Jun/2019 20:06:27] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[05/Jun/2019 20:06:28] "GET /admin/ HTTP/1.1" 200 7617
+[05/Jun/2019 20:06:29] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 20:06:29] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[05/Jun/2019 20:06:29] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 20:06:29] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 20:06:31] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:06:31] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:06:31] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[05/Jun/2019 20:06:31] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[05/Jun/2019 20:06:34] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[05/Jun/2019 20:06:41] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 5313
+[05/Jun/2019 20:06:41] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[05/Jun/2019 20:06:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:06:41] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[05/Jun/2019 20:06:42] "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+[05/Jun/2019 20:06:42] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[05/Jun/2019 20:06:42] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[05/Jun/2019 20:06:42] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[05/Jun/2019 20:06:42] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[05/Jun/2019 20:06:43] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[05/Jun/2019 20:06:44] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[05/Jun/2019 20:06:50] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271817
+[05/Jun/2019 20:06:52] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[05/Jun/2019 20:07:08] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16221
+[05/Jun/2019 20:07:09] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[05/Jun/2019 20:07:09] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20274
+[05/Jun/2019 20:07:09] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[05/Jun/2019 20:07:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:07:09] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[05/Jun/2019 20:07:09] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[05/Jun/2019 20:07:09] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[05/Jun/2019 20:07:10] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[05/Jun/2019 20:07:10] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[05/Jun/2019 20:07:44] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:07:50] "GET /admin/Offer/seller/ HTTP/1.1" 200 5495
+[05/Jun/2019 20:07:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:07:54] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[05/Jun/2019 20:07:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:07:54] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[05/Jun/2019 20:19:30] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:19:31] "GET /admin/Offer/seller/ HTTP/1.1" 200 6045
+[05/Jun/2019 20:19:31] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 20:19:31] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 20:19:32] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 20:19:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:19:32] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:32] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:33] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 20:19:33] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:33] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:33] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:33] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:34] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:34] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:19:35] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:36] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:19:36] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:19:37] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:19:37] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:19:43] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[05/Jun/2019 20:19:43] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:19:43] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[05/Jun/2019 20:19:44] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:19:44] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:19:47] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 5313
+[05/Jun/2019 20:19:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:19:50] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16260
+[05/Jun/2019 20:19:50] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[05/Jun/2019 20:19:50] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:50] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:19:50] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:51] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:19:51] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[05/Jun/2019 20:19:52] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:19:52] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:23:15] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 5313
+[05/Jun/2019 20:23:16] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 20:23:16] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 20:23:16] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:16] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:23:17] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 20:23:18] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:18] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:18] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:19] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 20:23:19] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:19] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:19] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:20] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:23:21] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:23:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:23:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:23:21] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:23:24] "GET /admin/Offer/buyplan/3/change/ HTTP/1.1" 200 16740
+[05/Jun/2019 20:23:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:23:31] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 5313
+[05/Jun/2019 20:23:34] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16260
+[05/Jun/2019 20:23:35] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:35] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:35] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[05/Jun/2019 20:23:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:23:35] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:36] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[05/Jun/2019 20:23:36] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[05/Jun/2019 20:23:38] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:23:38] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:29:15] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:29:17] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 5905
+[05/Jun/2019 20:29:18] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 20:29:18] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 20:29:18] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 20:29:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:29:18] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:29:19] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 20:29:19] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 20:29:19] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 20:29:19] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 20:29:20] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 20:29:20] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 20:29:20] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 20:29:20] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 20:29:21] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:29:21] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:29:21] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[05/Jun/2019 20:29:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:29:22] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:29:22] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:29:58] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:29:59] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[05/Jun/2019 20:29:59] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:29:59] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:30:02] "GET /admin/Offer/seller/ HTTP/1.1" 200 5864
+[05/Jun/2019 20:30:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:30:05] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[05/Jun/2019 20:30:10] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[05/Jun/2019 20:30:10] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[05/Jun/2019 20:30:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:30:11] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[05/Jun/2019 20:30:11] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[05/Jun/2019 20:30:11] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:30:11] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[05/Jun/2019 20:30:12] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:30:13] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:30:13] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:31:18] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:31:19] "GET /admin/Offer/seller/ HTTP/1.1" 200 6439
+[05/Jun/2019 20:31:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:31:25] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:31:27] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 5682
+[05/Jun/2019 20:31:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:31:32] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16312
+[05/Jun/2019 20:31:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Internal Server Error: /admin/Offer/buyplan/add/
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1565, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 810, in log_addition
+    object_repr=str(object),
+  File "/Workspace/Offer_Annonce_GreatParis/Offer/models.py", line 466, in __str__
+    return self.name + ":" + str(self.id) + ":" + self.geoHash
+TypeError: can only concatenate str (not "NoneType") to str
+[05/Jun/2019 20:37:31] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 500 120068
+[05/Jun/2019 20:37:33] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16312
+[05/Jun/2019 20:38:07] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:38:09] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 6263
+[05/Jun/2019 20:38:10] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 20:38:10] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 20:38:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:38:10] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 20:38:10] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 20:38:10] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:38:10] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 20:38:11] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 20:38:11] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 20:38:12] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 20:38:12] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 20:38:12] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 20:38:12] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 20:38:13] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:38:13] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:38:13] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:38:13] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:38:13] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:38:13] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:39:08] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:39:08] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[05/Jun/2019 20:39:08] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:39:08] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:39:11] "GET /admin/Offer/seller/ HTTP/1.1" 200 6245
+[05/Jun/2019 20:39:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:39:14] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[05/Jun/2019 20:39:14] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[05/Jun/2019 20:39:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:39:14] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[05/Jun/2019 20:39:14] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[05/Jun/2019 20:39:15] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[05/Jun/2019 20:39:15] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:39:15] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[05/Jun/2019 20:39:16] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:39:17] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:39:17] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:39:59] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:40:01] "GET /admin/Offer/seller/ HTTP/1.1" 200 6808
+[05/Jun/2019 20:40:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:40:05] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:40:09] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 6045
+[05/Jun/2019 20:40:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:40:14] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16358
+[05/Jun/2019 20:40:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:42:27] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:42:28] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 6596
+[05/Jun/2019 20:42:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:42:48] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:42:51] "GET /admin/Offer/seller/ HTTP/1.1" 200 6620
+[05/Jun/2019 20:42:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:42:56] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[05/Jun/2019 20:42:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:44:07] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:44:08] "GET /admin/Offer/seller/ HTTP/1.1" 200 7183
+[05/Jun/2019 20:44:08] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 20:44:08] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 20:44:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:44:09] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 20:44:09] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 20:44:09] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:44:09] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 20:44:10] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 20:44:10] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 20:44:10] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 20:44:10] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 20:44:10] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 20:44:11] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:44:12] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 20:44:13] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:44:13] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:44:13] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:44:13] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:44:13] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:44:16] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:44:19] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 6393
+[05/Jun/2019 20:44:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:44:25] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16404
+[05/Jun/2019 20:44:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:45:30] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:45:31] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 6946
+[05/Jun/2019 20:45:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:49:05] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:49:05] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[05/Jun/2019 20:49:06] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:49:06] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:49:09] "GET /admin/Offer/seller/ HTTP/1.1" 200 6995
+[05/Jun/2019 20:49:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:49:12] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[05/Jun/2019 20:49:12] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[05/Jun/2019 20:49:12] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[05/Jun/2019 20:49:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:49:13] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[05/Jun/2019 20:49:13] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:49:14] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[05/Jun/2019 20:49:14] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[05/Jun/2019 20:49:15] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:49:16] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:49:16] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:50:04] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:50:05] "GET /admin/Offer/seller/ HTTP/1.1" 200 7546
+[05/Jun/2019 20:50:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:50:10] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:50:14] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 6742
+[05/Jun/2019 20:50:14] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 20:50:14] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 20:50:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:50:14] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:50:14] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 20:50:15] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 20:50:15] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 20:50:16] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[05/Jun/2019 20:50:22] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16444
+[05/Jun/2019 20:50:23] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 20:50:23] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 20:50:23] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 20:50:23] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 20:50:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:50:23] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 20:50:24] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:50:24] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:50:24] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:51:54] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:51:54] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 7299
+[05/Jun/2019 20:51:55] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:51:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:51:56] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:51:56] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:52:19] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16444
+[05/Jun/2019 20:52:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:53:12] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:53:14] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 7650
+[05/Jun/2019 20:53:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:53:46] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:53:49] "GET /admin/Offer/seller/ HTTP/1.1" 200 7364
+[05/Jun/2019 20:53:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:53:52] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[05/Jun/2019 20:53:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:55:01] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:55:02] "GET /admin/Offer/seller/ HTTP/1.1" 200 7951
+[05/Jun/2019 20:55:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:55:07] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 20:55:10] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 7444
+[05/Jun/2019 20:55:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:55:13] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16502
+[05/Jun/2019 20:55:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:56:14] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 20:56:15] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 8007
+[05/Jun/2019 20:56:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:58:49] "GET /admin/Offer/buyplan/11/change/ HTTP/1.1" 200 16999
+[05/Jun/2019 20:58:50] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 20:58:50] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[05/Jun/2019 20:58:50] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 20:58:50] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:50] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:58:50] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:51] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:51] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[05/Jun/2019 20:58:51] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:51] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:51] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:52] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:52] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:52] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:52] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:52] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[05/Jun/2019 20:58:52] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 20:58:53] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:58:53] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:58:53] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 20:58:54] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:58:54] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:59:01] "POST /admin/Offer/buyplan/11/change/ HTTP/1.1" 302 0
+[05/Jun/2019 20:59:01] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 8009
+[05/Jun/2019 20:59:02] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:59:02] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 20:59:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 20:59:04] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 20:59:04] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:02:51] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16502
+[05/Jun/2019 21:02:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:08:26] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 21:08:27] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 8357
+[05/Jun/2019 21:08:27] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 21:08:27] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 21:08:28] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 21:08:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:08:30] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 21:08:31] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 21:08:32] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 21:08:33] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 21:08:33] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 21:08:33] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 21:08:33] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 21:08:34] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 21:08:35] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 21:08:35] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:08:36] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:08:36] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:08:36] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 21:08:37] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 21:08:38] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 21:13:47] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 21:13:48] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:13:48] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[05/Jun/2019 21:13:49] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:13:52] "GET /admin/Offer/seller/ HTTP/1.1" 200 7751
+[05/Jun/2019 21:13:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:13:57] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[05/Jun/2019 21:13:57] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[05/Jun/2019 21:13:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:13:57] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[05/Jun/2019 21:13:57] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[05/Jun/2019 21:13:58] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[05/Jun/2019 21:13:58] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[05/Jun/2019 21:13:58] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[05/Jun/2019 21:13:59] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:14:00] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:14:00] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:14:28] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[05/Jun/2019 21:14:29] "GET /admin/Offer/seller/ HTTP/1.1" 200 8326
+[05/Jun/2019 21:14:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:14:33] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[05/Jun/2019 21:14:49] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 8150
+[05/Jun/2019 21:14:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:14:57] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[05/Jun/2019 21:14:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:16:49] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 21:16:49] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 8706
+[05/Jun/2019 21:16:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:19:10] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[05/Jun/2019 21:19:10] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[05/Jun/2019 21:19:11] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[05/Jun/2019 21:19:11] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[05/Jun/2019 21:19:11] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[05/Jun/2019 21:19:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:19:11] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[05/Jun/2019 21:19:11] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Jun/2019 21:19:11] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[05/Jun/2019 21:19:11] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[05/Jun/2019 21:19:12] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[05/Jun/2019 21:19:12] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[05/Jun/2019 21:19:12] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[05/Jun/2019 21:19:13] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 21:19:13] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 21:19:13] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[05/Jun/2019 21:21:43] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 21:21:45] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 9047
+[05/Jun/2019 21:21:46] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[05/Jun/2019 21:21:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:21:47] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:21:50] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:21:50] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:21:54] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[05/Jun/2019 21:21:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:22:58] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 21:22:59] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 9398
+[05/Jun/2019 21:23:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:23:29] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[05/Jun/2019 21:23:31] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[05/Jun/2019 21:23:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[05/Jun/2019 21:23:31] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[05/Jun/2019 21:23:31] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[05/Jun/2019 21:23:32] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[05/Jun/2019 21:24:09] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[05/Jun/2019 21:24:09] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[05/Jun/2019 21:24:10] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:24:11] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[05/Jun/2019 21:24:49] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[05/Jun/2019 21:24:50] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 9738
+[05/Jun/2019 21:24:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+----------------------------------------
+Exception happened during processing of request from ('78.250.76.150', 53131)
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [Errno 110] Connection timed out
+----------------------------------------
+[06/Jun/2019 07:44:59] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[06/Jun/2019 07:44:59] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Jun/2019 07:44:59] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[06/Jun/2019 07:44:59] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[06/Jun/2019 07:44:59] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Jun/2019 07:44:59] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 07:44:59] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 07:44:59] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 07:44:59] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[06/Jun/2019 07:44:59] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 9539
+[06/Jun/2019 07:45:23] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 07:45:23] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[06/Jun/2019 07:45:23] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Jun/2019 07:47:59] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[06/Jun/2019 07:47:59] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[06/Jun/2019 07:47:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 07:47:59] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[06/Jun/2019 07:47:59] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[06/Jun/2019 07:47:59] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[06/Jun/2019 07:47:59] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[06/Jun/2019 07:47:59] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[06/Jun/2019 07:47:59] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[06/Jun/2019 07:47:59] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[06/Jun/2019 07:50:33] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 07:50:33] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 10090
+[06/Jun/2019 07:50:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 07:50:33] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[06/Jun/2019 07:50:59] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[06/Jun/2019 07:50:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 07:53:10] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 07:53:10] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 10452
+[06/Jun/2019 07:53:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 07:54:05] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[06/Jun/2019 07:54:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 07:56:20] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 07:56:20] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 10793
+[06/Jun/2019 07:56:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 07:59:27] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[06/Jun/2019 07:59:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:09:13] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:09:13] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 11129
+[06/Jun/2019 08:09:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:09:48] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[06/Jun/2019 08:09:51] "GET /admin/Offer/seller/ HTTP/1.1" 200 8132
+[06/Jun/2019 08:09:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:10:08] "GET /admin/Offer/seller/3/change/ HTTP/1.1" 200 11150
+[06/Jun/2019 08:10:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:10:08] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[06/Jun/2019 08:10:37] "POST /admin/Offer/seller/3/change/ HTTP/1.1" 302 0
+[06/Jun/2019 08:10:37] "GET /admin/Offer/seller/ HTTP/1.1" 200 8328
+[06/Jun/2019 08:10:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:10:39] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[06/Jun/2019 08:10:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:12:08] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[06/Jun/2019 08:14:25] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 10932
+[06/Jun/2019 08:14:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:14:27] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16554
+[06/Jun/2019 08:14:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:16:46] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:16:47] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 11475
+[06/Jun/2019 08:16:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:18:55] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[06/Jun/2019 08:19:02] "GET /admin/Offer/seller/ HTTP/1.1" 200 8132
+[06/Jun/2019 08:19:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:19:04] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[06/Jun/2019 08:19:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:19:31] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:19:31] "GET /admin/Offer/seller/ HTTP/1.1" 200 8677
+[06/Jun/2019 08:19:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:19:35] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[06/Jun/2019 08:19:40] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 11276
+[06/Jun/2019 08:19:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:19:42] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16591
+[06/Jun/2019 08:19:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:22:01] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:22:01] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 11841
+[06/Jun/2019 08:22:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:22:55] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[06/Jun/2019 08:22:56] "GET /admin/Offer/seller/ HTTP/1.1" 200 8498
+[06/Jun/2019 08:22:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:22:58] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10604
+[06/Jun/2019 08:22:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:23:23] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:23:24] "GET /admin/Offer/seller/ HTTP/1.1" 200 9072
+[06/Jun/2019 08:23:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:23:26] "GET /admin/Offer/ HTTP/1.1" 200 6334
+[06/Jun/2019 08:23:29] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 11631
+[06/Jun/2019 08:23:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:23:38] "GET /admin/Offer/buyplan/22/change/ HTTP/1.1" 200 17153
+[06/Jun/2019 08:23:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:23:58] "POST /admin/Offer/buyplan/22/change/ HTTP/1.1" 302 0
+[06/Jun/2019 08:23:58] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 11821
+[06/Jun/2019 08:23:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:24:01] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:24:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:26:44] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:26:44] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 12181
+[06/Jun/2019 08:26:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:27:03] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:27:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:29:10] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:29:11] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 12540
+[06/Jun/2019 08:29:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:30:36] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:30:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:36:00] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:36:00] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 12880
+[06/Jun/2019 08:36:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:36:45] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:36:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:38:26] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:38:26] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 13248
+[06/Jun/2019 08:38:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:39:00] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:39:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:40:20] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:40:20] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 13594
+[06/Jun/2019 08:40:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:42:45] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:42:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:43:47] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 13387
+[06/Jun/2019 08:44:05] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:44:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:45:52] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:45:52] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 13930
+[06/Jun/2019 08:45:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:47:39] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:47:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:51:29] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:51:29] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 14266
+[06/Jun/2019 08:51:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:51:55] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:51:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:52:36] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:52:37] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 14636
+[06/Jun/2019 08:52:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:54:40] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:54:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:57:08] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:57:08] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 14983
+[06/Jun/2019 08:57:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:57:57] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 08:57:57] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:57:57] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 08:57:57] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 08:58:50] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 08:58:50] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 15338
+[06/Jun/2019 08:58:50] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Jun/2019 08:58:50] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[06/Jun/2019 08:58:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 08:58:50] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Jun/2019 09:02:10] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 09:02:10] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[06/Jun/2019 09:02:10] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[06/Jun/2019 09:02:10] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[06/Jun/2019 09:02:10] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[06/Jun/2019 09:02:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:02:10] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[06/Jun/2019 09:02:10] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[06/Jun/2019 09:02:10] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[06/Jun/2019 09:02:10] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[06/Jun/2019 09:03:43] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 09:03:43] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 15683
+[06/Jun/2019 09:03:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:03:43] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[06/Jun/2019 09:04:24] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 09:04:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:07:04] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 09:07:04] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 16040
+[06/Jun/2019 09:07:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:08:18] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 09:08:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:09:49] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 09:09:49] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 16369
+[06/Jun/2019 09:09:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:10:24] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 09:10:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:11:00] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 09:11:00] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 16712
+[06/Jun/2019 09:11:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:11:14] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 09:11:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:12:08] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 09:12:08] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17060
+[06/Jun/2019 09:12:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:12:54] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16641
+[06/Jun/2019 09:12:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 09:13:58] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 09:13:59] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17419
+[06/Jun/2019 09:13:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:24:47] "GET /admin HTTP/1.1" 301 0
+[06/Jun/2019 12:24:47] "GET /admin/ HTTP/1.1" 302 0
+[06/Jun/2019 12:24:48] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[06/Jun/2019 12:25:38] "GET /admin HTTP/1.1" 301 0
+[06/Jun/2019 12:25:38] "GET /admin/ HTTP/1.1" 302 0
+[06/Jun/2019 12:25:38] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[06/Jun/2019 12:25:38] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[06/Jun/2019 12:25:38] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[06/Jun/2019 12:25:38] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[06/Jun/2019 12:25:38] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+Not Found: /favicon.ico
+[06/Jun/2019 12:25:38] "GET /favicon.ico HTTP/1.1" 404 1985
+[06/Jun/2019 12:25:38] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[06/Jun/2019 12:25:38] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[06/Jun/2019 12:25:47] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[06/Jun/2019 12:25:47] "GET /admin/ HTTP/1.1" 200 8820
+[06/Jun/2019 12:25:47] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[06/Jun/2019 12:25:47] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[06/Jun/2019 12:25:47] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[06/Jun/2019 12:25:47] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[06/Jun/2019 12:25:56] "GET /admin/auth/user/ HTTP/1.1" 200 7849
+[06/Jun/2019 12:25:56] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[06/Jun/2019 12:25:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:25:56] "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+[06/Jun/2019 12:25:56] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[06/Jun/2019 12:25:56] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[06/Jun/2019 12:25:56] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271817
+[06/Jun/2019 12:25:56] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[06/Jun/2019 12:25:56] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[06/Jun/2019 12:25:57] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[06/Jun/2019 12:25:57] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[06/Jun/2019 12:25:57] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[06/Jun/2019 12:25:57] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[06/Jun/2019 12:25:57] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[06/Jun/2019 12:25:57] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[06/Jun/2019 12:25:59] "GET /admin/auth/user/add/ HTTP/1.1" 200 5658
+[06/Jun/2019 12:25:59] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[06/Jun/2019 12:25:59] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[06/Jun/2019 12:25:59] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[06/Jun/2019 12:25:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:25:59] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[06/Jun/2019 12:34:10] "GET /admin HTTP/1.1" 301 0
+[06/Jun/2019 12:34:11] "GET /admin/ HTTP/1.1" 200 8820
+[06/Jun/2019 12:34:11] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Jun/2019 12:34:11] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[06/Jun/2019 12:34:11] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[06/Jun/2019 12:34:11] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Jun/2019 12:34:11] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:11] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:11] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[06/Jun/2019 12:34:11] "GET /favicon.ico HTTP/1.1" 404 1985
+[06/Jun/2019 12:34:11] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[06/Jun/2019 12:34:11] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[06/Jun/2019 12:34:13] "GET /admin/auth/user/add/ HTTP/1.1" 200 5658
+[06/Jun/2019 12:34:13] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[06/Jun/2019 12:34:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:34:13] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:14] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[06/Jun/2019 12:34:14] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271817
+[06/Jun/2019 12:34:14] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[06/Jun/2019 12:34:14] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:14] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:14] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:14] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:14] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:14] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:14] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:23] "POST /admin/auth/user/add/ HTTP/1.1" 200 5858
+[06/Jun/2019 12:34:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:34:35] "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[06/Jun/2019 12:34:35] "GET /admin/auth/user/5/change/ HTTP/1.1" 200 16749
+[06/Jun/2019 12:34:35] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:34:35] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:35] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:41] "POST /admin/auth/user/5/change/ HTTP/1.1" 302 0
+[06/Jun/2019 12:34:41] "GET /admin/auth/user/ HTTP/1.1" 200 8438
+[06/Jun/2019 12:34:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:34:41] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Jun/2019 12:34:42] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:42] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:34:43] "GET /admin/ HTTP/1.1" 200 9377
+[06/Jun/2019 12:34:47] "GET /admin/logout/ HTTP/1.1" 200 1207
+[06/Jun/2019 12:34:58] "GET /admin/ HTTP/1.1" 302 0
+[06/Jun/2019 12:34:58] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[06/Jun/2019 12:35:03] "GET /admin/ HTTP/1.1" 302 0
+[06/Jun/2019 12:35:03] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[06/Jun/2019 12:35:03] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[06/Jun/2019 12:38:23] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[06/Jun/2019 12:38:32] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[06/Jun/2019 12:38:32] "GET /admin/ HTTP/1.1" 200 7616
+[06/Jun/2019 12:38:38] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17211
+[06/Jun/2019 12:38:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:40:45] "GET /admin/Offer/buyplan/?q=horizon HTTP/1.1" 200 4206
+[06/Jun/2019 12:40:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:40:47] "GET /admin/Offer/buyplan/add/?_changelist_filters=q%3Dhorizon HTTP/1.1" 200 16672
+[06/Jun/2019 12:40:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:42:48] "GET /admin/Offer/ HTTP/1.1" 200 6333
+[06/Jun/2019 12:42:51] "GET /admin/Offer/seller/ HTTP/1.1" 200 8879
+[06/Jun/2019 12:42:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:42:53] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[06/Jun/2019 12:42:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:42:53] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[06/Jun/2019 12:43:38] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 12:43:38] "GET /admin/Offer/seller/ HTTP/1.1" 200 9433
+[06/Jun/2019 12:43:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:43:51] "POST /admin/Offer/buyplan/add/?_changelist_filters=q%3Dhorizon HTTP/1.1" 200 17081
+[06/Jun/2019 12:43:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Internal Server Error: /admin/Offer/buyplan/add/
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "seller_id" violates not-null constraint
+DETAIL:  Failing row contains (39, null, null, 2019-06-06 12:44:01.62607+00, 2019-06-06 12:44:01.626075+00, null, HORIZON, null, 48.930038, 2.384692, 47, null, null, null, null, null, null, null, f, null, null, null, null, null, c36861df488245a0ae34b4078ace9e4f1279, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1088, in save_model
+    obj.save()
+  File "/Workspace/Offer_Annonce_GreatParis/Offer/models.py", line 487, in save
+    return super(BuyPlan, self).save(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "seller_id" violates not-null constraint
+DETAIL:  Failing row contains (39, null, null, 2019-06-06 12:44:01.62607+00, 2019-06-06 12:44:01.626075+00, null, HORIZON, null, 48.930038, 2.384692, 47, null, null, null, null, null, null, null, f, null, null, null, null, null, c36861df488245a0ae34b4078ace9e4f1279, null).
+
+[06/Jun/2019 12:44:01] "POST /admin/Offer/buyplan/add/?_changelist_filters=q%3Dhorizon HTTP/1.1" 500 209770
+[06/Jun/2019 12:44:08] "GET /admin/Offer/buyplan/add/?_changelist_filters=q%3Dhorizon HTTP/1.1" 200 16713
+[06/Jun/2019 12:44:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:45:18] "POST /admin/Offer/buyplan/add/?_changelist_filters=q%3Dhorizon HTTP/1.1" 200 17122
+[06/Jun/2019 12:45:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Internal Server Error: /admin/Offer/buyplan/add/
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1565, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 810, in log_addition
+    object_repr=str(object),
+  File "/Workspace/Offer_Annonce_GreatParis/Offer/models.py", line 466, in __str__
+    return self.name + ":" + str(self.id) + ":" + self.geoHash
+TypeError: can only concatenate str (not "NoneType") to str
+[06/Jun/2019 12:45:24] "POST /admin/Offer/buyplan/add/?_changelist_filters=q%3Dhorizon HTTP/1.1" 500 120912
+/Workspace/Offer_Annonce_GreatParis/Offer/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2019 - 19:58:13
+Django version 2.2.2, using settings 'OfferGreatParis.settings'
+Starting development server at http://0.0.0.0:8002/
+Quit the server with CONTROL-C.
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Watching for file changes with StatReloader
+[06/Jun/2019 12:49:22] "GET /admin/Offer/buyplan/add/?_changelist_filters=q%3Dhorizon HTTP/1.1" 200 16713
+[06/Jun/2019 12:49:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:49:25] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17211
+[06/Jun/2019 12:49:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:49:29] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16681
+[06/Jun/2019 12:49:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:51:53] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 200 17061
+[06/Jun/2019 12:51:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:52:29] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 12:52:29] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17746
+[06/Jun/2019 12:52:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Not Found: /favicon.ico
+[06/Jun/2019 12:52:30] "GET /favicon.ico HTTP/1.1" 404 1985
+[06/Jun/2019 12:52:48] "GET /admin/Offer/buyplan/41/change/ HTTP/1.1" 200 17183
+[06/Jun/2019 12:52:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 12:52:51] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17554
+[06/Jun/2019 13:21:53] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[06/Jun/2019 13:21:54] "GET /admin/login/?next=/admin HTTP/1.1" 200 1817
+[06/Jun/2019 13:21:54] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[06/Jun/2019 13:21:58] "GET /admin/login/?next=%2Fadmin%2F HTTP/1.1" 200 1823
+[06/Jun/2019 13:21:59] "GET /admin/login/ HTTP/1.1" 200 1806
+[06/Jun/2019 13:21:59] "GET /admin/login/ HTTP/1.1" 200 1806
+[06/Jun/2019 13:22:03] "GET /admin/login/?next=%2Fadmin%2F HTTP/1.1" 200 1823
+[06/Jun/2019 14:56:31] "GET /admin/login/?next=%2Fadmin%2F&fbclid=IwAR3rxcuMZYLy2ugo18RLTBGiMIdBLsFzNwh4u4jLmAimbScntFxjIZC7IJY HTTP/1.1" 200 1896
+[06/Jun/2019 14:56:31] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[06/Jun/2019 14:56:31] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[06/Jun/2019 14:56:31] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[06/Jun/2019 14:56:32] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[06/Jun/2019 14:56:32] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+Not Found: /favicon.ico
+[06/Jun/2019 14:56:32] "GET /favicon.ico HTTP/1.1" 404 1985
+[06/Jun/2019 14:56:32] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[06/Jun/2019 14:56:51] "POST /admin/login/?next=%2Fadmin%2F&fbclid=IwAR3rxcuMZYLy2ugo18RLTBGiMIdBLsFzNwh4u4jLmAimbScntFxjIZC7IJY HTTP/1.1" 302 0
+[06/Jun/2019 14:56:51] "GET /admin/ HTTP/1.1" 200 8232
+[06/Jun/2019 14:56:51] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[06/Jun/2019 14:56:52] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[06/Jun/2019 14:56:52] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[06/Jun/2019 14:56:52] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[06/Jun/2019 14:57:15] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17554
+[06/Jun/2019 14:57:15] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[06/Jun/2019 14:57:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 14:57:15] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[06/Jun/2019 14:57:15] "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+[06/Jun/2019 14:57:15] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[06/Jun/2019 14:57:15] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[06/Jun/2019 14:57:15] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[06/Jun/2019 14:57:15] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[06/Jun/2019 14:57:15] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271817
+[06/Jun/2019 14:57:15] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[06/Jun/2019 14:57:15] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[06/Jun/2019 14:57:16] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[06/Jun/2019 14:57:24] "GET /admin/Offer/buyplan/41/change/ HTTP/1.1" 200 17183
+[06/Jun/2019 14:57:24] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[06/Jun/2019 14:57:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 14:57:24] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[06/Jun/2019 14:57:24] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20274
+[06/Jun/2019 14:57:24] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[06/Jun/2019 14:57:24] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[06/Jun/2019 14:57:24] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[06/Jun/2019 14:57:25] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[06/Jun/2019 14:57:25] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[06/Jun/2019 14:57:45] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17554
+[06/Jun/2019 14:58:01] "GET /admin/ HTTP/1.1" 200 8232
+[06/Jun/2019 15:01:37] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16681
+[06/Jun/2019 15:01:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:07:24] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 200 17204
+[06/Jun/2019 15:07:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Internal Server Error: /admin/Offer/buyplan/add/
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "seller_id" violates not-null constraint
+DETAIL:  Failing row contains (42, null, null, 2019-06-06 15:07:43.666612+00, 2019-06-06 15:07:43.666617+00, null, LES TERRASSES MAGELLAN, null, 48.832632, 2.520919, 43, null, null, https://immobilierneuf.leboncoin.fr/annonce/373/programme-neuf/a..., null, null, 2, null, f, 187500, null, null, null, null, b23cfb74d9034684b7770f3b99928ea18215, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1088, in save_model
+    obj.save()
+  File "/Workspace/Offer_Annonce_GreatParis/Offer/models.py", line 487, in save
+    return super(BuyPlan, self).save(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "seller_id" violates not-null constraint
+DETAIL:  Failing row contains (42, null, null, 2019-06-06 15:07:43.666612+00, 2019-06-06 15:07:43.666617+00, null, LES TERRASSES MAGELLAN, null, 48.832632, 2.520919, 43, null, null, https://immobilierneuf.leboncoin.fr/annonce/373/programme-neuf/a..., null, null, 2, null, f, 187500, null, null, null, null, b23cfb74d9034684b7770f3b99928ea18215, null).
+
+[06/Jun/2019 15:07:43] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 500 210320
+[06/Jun/2019 15:08:03] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16681
+[06/Jun/2019 15:08:35] "GET /admin/login/?next=%2Fadmin%2F&fbclid=IwAR3rxcuMZYLy2ugo18RLTBGiMIdBLsFzNwh4u4jLmAimbScntFxjIZC7IJY HTTP/1.1" 302 0
+[06/Jun/2019 15:08:35] "GET /admin/ HTTP/1.1" 200 8232
+[06/Jun/2019 15:08:43] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[06/Jun/2019 15:08:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:08:43] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[06/Jun/2019 15:09:45] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:09:46] "GET /admin/Offer/seller/ HTTP/1.1" 200 9827
+[06/Jun/2019 15:09:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:09:46] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[06/Jun/2019 15:10:03] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16734
+[06/Jun/2019 15:10:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:12:29] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:12:30] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 18118
+[06/Jun/2019 15:12:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:15:35] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16734
+[06/Jun/2019 15:15:39] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 17911
+[06/Jun/2019 15:15:46] "GET /admin/Offer/ HTTP/1.1" 200 6333
+[06/Jun/2019 15:15:48] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16734
+[06/Jun/2019 15:15:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:19:41] "GET /admin/Offer/ HTTP/1.1" 200 6333
+[06/Jun/2019 15:19:50] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[06/Jun/2019 15:19:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:20:40] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:20:41] "GET /admin/Offer/seller/ HTTP/1.1" 200 10211
+[06/Jun/2019 15:20:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:20:57] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16788
+[06/Jun/2019 15:20:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:22:58] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:22:58] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 18471
+[06/Jun/2019 15:22:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:24:04] "GET /admin/Offer/buyplan/35/change/ HTTP/1.1" 200 17272
+[06/Jun/2019 15:24:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:24:20] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 18266
+[06/Jun/2019 15:25:22] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16788
+[06/Jun/2019 15:25:28] "GET /admin/Offer/ HTTP/1.1" 200 6333
+[06/Jun/2019 15:25:32] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16788
+[06/Jun/2019 15:25:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:28:36] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:28:36] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 18818
+[06/Jun/2019 15:28:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:28:48] "GET /admin/Offer/ HTTP/1.1" 200 6333
+[06/Jun/2019 15:30:52] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[06/Jun/2019 15:30:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:32:12] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:32:13] "GET /admin/Offer/seller/ HTTP/1.1" 200 10582
+[06/Jun/2019 15:32:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:32:22] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16836
+[06/Jun/2019 15:32:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:35:31] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:35:32] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 19161
+[06/Jun/2019 15:35:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:37:30] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[06/Jun/2019 15:37:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:38:13] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:38:14] "GET /admin/Offer/seller/ HTTP/1.1" 200 10957
+[06/Jun/2019 15:38:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:38:22] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16883
+[06/Jun/2019 15:38:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:40:53] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:40:53] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 19498
+[06/Jun/2019 15:40:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:41:59] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16883
+[06/Jun/2019 15:41:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:43:44] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:43:44] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 19840
+[06/Jun/2019 15:43:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:46:59] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16883
+[06/Jun/2019 15:47:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:49:32] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:49:32] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 20194
+[06/Jun/2019 15:49:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:52:01] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[06/Jun/2019 15:52:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:52:54] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:52:54] "GET /admin/Offer/seller/ HTTP/1.1" 200 11339
+[06/Jun/2019 15:52:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:53:03] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16933
+[06/Jun/2019 15:53:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:55:17] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:55:17] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 20530
+[06/Jun/2019 15:55:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:56:38] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16933
+[06/Jun/2019 15:56:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:58:43] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 15:58:43] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 20880
+[06/Jun/2019 15:58:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 15:59:42] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[06/Jun/2019 15:59:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:01:03] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[06/Jun/2019 16:01:03] "GET /admin/Offer/seller/ HTTP/1.1" 200 11732
+[06/Jun/2019 16:01:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:01:14] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16990
+[06/Jun/2019 16:01:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:03:59] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 16:04:00] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 21226
+[06/Jun/2019 16:04:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:05:24] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16990
+[06/Jun/2019 16:05:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:08:03] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 16:08:03] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 21574
+[06/Jun/2019 16:08:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:09:04] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16990
+[06/Jun/2019 16:09:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:10:58] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 16:10:58] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 21909
+[06/Jun/2019 16:10:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:12:35] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16990
+[06/Jun/2019 16:12:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:14:36] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 16:14:36] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 22278
+[06/Jun/2019 16:14:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:18:42] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16990
+[06/Jun/2019 16:18:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:20:18] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 16:20:18] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 22603
+[06/Jun/2019 16:20:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:22:13] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16990
+[06/Jun/2019 16:22:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:24:15] "GET /admin/Offer/seller/ HTTP/1.1" 200 11533
+[06/Jun/2019 16:25:15] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 16:25:15] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 22955
+[06/Jun/2019 16:25:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:27:28] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 16990
+[06/Jun/2019 16:27:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 16:32:56] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[06/Jun/2019 16:32:56] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23305
+[06/Jun/2019 16:32:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:00:48] "GET /admin/login/?next=%2Fadmin%2F&fbclid=IwAR2qXCnjfZZGHb4i55qjpC0iD5Jg8ukbqDl9ngI5BxfXqFPAdTFlH99bg6o HTTP/1.1" 302 0
+[06/Jun/2019 17:00:48] "GET /admin/ HTTP/1.1" 200 10649
+[06/Jun/2019 17:00:48] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Jun/2019 17:00:48] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[06/Jun/2019 17:00:48] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[06/Jun/2019 17:00:49] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Jun/2019 17:00:49] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:00:49] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:00:49] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 17:00:49] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 17:00:49] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /admin/Offer/buyplan/58/change/ HTTP/1.1" 200 17503
+[06/Jun/2019 17:01:01] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:01:01] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:01:01] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:01:40] "GET /admin/ HTTP/1.1" 200 10649
+[06/Jun/2019 17:01:44] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23107
+[06/Jun/2019 17:01:44] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Jun/2019 17:01:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:01:44] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:01:44] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:01:49] "GET /admin/Offer/buyplan/25/change/ HTTP/1.1" 200 17484
+[06/Jun/2019 17:01:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:02:17] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23107
+[06/Jun/2019 17:02:25] "GET /admin/Offer/buyplan/20/change/ HTTP/1.1" 200 17356
+[06/Jun/2019 17:02:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:02:42] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23107
+[06/Jun/2019 17:02:46] "GET /admin/Offer/buyplan/58/change/ HTTP/1.1" 200 17503
+[06/Jun/2019 17:02:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:02:56] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23107
+[06/Jun/2019 17:03:03] "GET /admin/Offer/buyplan/21/change/ HTTP/1.1" 200 17474
+[06/Jun/2019 17:03:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:03:15] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23107
+/Workspace/Offer_Annonce_GreatParis/Offer/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 06, 2019 - 12:49:16
+Django version 2.2.2, using settings 'OfferGreatParis.settings'
+Starting development server at http://0.0.0.0:8002/
+Quit the server with CONTROL-C.
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Object of type Decimal is not JSON serializable
+Watching for file changes with StatReloader
+[06/Jun/2019 17:34:48] "GET /admin HTTP/1.1" 301 0
+[06/Jun/2019 17:34:48] "GET /admin/ HTTP/1.1" 200 10721
+[06/Jun/2019 17:34:48] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Jun/2019 17:34:48] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[06/Jun/2019 17:34:48] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[06/Jun/2019 17:34:49] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Jun/2019 17:34:50] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 17:34:50] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 17:34:50] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Jun/2019 17:34:50] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:34:50] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[06/Jun/2019 17:34:50] "GET /favicon.ico HTTP/1.1" 404 1985
+[06/Jun/2019 17:35:02] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23108
+[06/Jun/2019 17:35:02] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:35:02] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:35:02] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:03] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:35:06] "GET /admin/Offer/buyplan/3/change/ HTTP/1.1" 200 17952
+[06/Jun/2019 17:35:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:35:07] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[06/Jun/2019 17:35:07] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:07] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:07] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:07] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[06/Jun/2019 17:35:07] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[06/Jun/2019 17:35:07] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:35:07] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:36:13] "POST /admin/Offer/buyplan/3/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:36:14] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23308
+[06/Jun/2019 17:36:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:36:14] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[06/Jun/2019 17:36:24] "GET /admin/Offer/buyplan/4/change/ HTTP/1.1" 200 17999
+[06/Jun/2019 17:36:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:36:42] "POST /admin/Offer/buyplan/4/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:36:42] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23333
+[06/Jun/2019 17:36:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:36:46] "GET /admin/Offer/buyplan/6/change/ HTTP/1.1" 200 17989
+[06/Jun/2019 17:36:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:36:55] "POST /admin/Offer/buyplan/6/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:36:55] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23328
+[06/Jun/2019 17:36:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:37:02] "GET /admin/Offer/buyplan/7/change/ HTTP/1.1" 200 17959
+[06/Jun/2019 17:37:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:37:22] "POST /admin/Offer/buyplan/7/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:37:23] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 17:37:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:37:26] "GET /admin/Offer/buyplan/8/change/ HTTP/1.1" 200 17961
+[06/Jun/2019 17:37:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:37:45] "POST /admin/Offer/buyplan/8/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:37:45] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23314
+[06/Jun/2019 17:37:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:37:52] "GET /admin/Offer/buyplan/9/change/ HTTP/1.1" 200 17964
+[06/Jun/2019 17:37:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:38:09] "POST /admin/Offer/buyplan/9/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:38:09] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23316
+[06/Jun/2019 17:38:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:38:15] "GET /admin/Offer/buyplan/11/change/ HTTP/1.1" 200 17969
+[06/Jun/2019 17:38:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:38:40] "POST /admin/Offer/buyplan/11/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:38:40] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23319
+[06/Jun/2019 17:38:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:38:45] "GET /admin/Offer/buyplan/12/change/ HTTP/1.1" 200 17969
+[06/Jun/2019 17:38:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:39:12] "POST /admin/Offer/buyplan/12/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:39:12] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23317
+[06/Jun/2019 17:39:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:39:21] "GET /admin/Offer/buyplan/13/change/ HTTP/1.1" 200 17958
+[06/Jun/2019 17:39:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:39:38] "POST /admin/Offer/buyplan/13/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:39:39] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23314
+[06/Jun/2019 17:39:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:39:43] "GET /admin/Offer/buyplan/14/change/ HTTP/1.1" 200 17952
+[06/Jun/2019 17:39:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:40:00] "POST /admin/Offer/buyplan/14/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:40:00] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23310
+[06/Jun/2019 17:40:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:40:06] "GET /admin/Offer/buyplan/15/change/ HTTP/1.1" 200 17965
+[06/Jun/2019 17:40:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:40:26] "POST /admin/Offer/buyplan/15/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:40:26] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 17:40:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:40:36] "GET /admin/Offer/buyplan/16/change/ HTTP/1.1" 200 17950
+[06/Jun/2019 17:40:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:40:52] "POST /admin/Offer/buyplan/16/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:40:52] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23309
+[06/Jun/2019 17:40:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:41:06] "GET /admin/Offer/buyplan/17/change/ HTTP/1.1" 200 17966
+[06/Jun/2019 17:41:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:41:49] "POST /admin/Offer/buyplan/17/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:41:49] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 17:41:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:41:58] "GET /admin/Offer/buyplan/18/change/ HTTP/1.1" 200 17980
+[06/Jun/2019 17:41:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:42:18] "POST /admin/Offer/buyplan/18/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:42:18] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23320
+[06/Jun/2019 17:42:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:42:27] "GET /admin/Offer/buyplan/19/change/ HTTP/1.1" 200 17966
+[06/Jun/2019 17:42:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:42:55] "POST /admin/Offer/buyplan/19/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:42:56] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 17:42:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:43:02] "GET /admin/Offer/buyplan/20/change/ HTTP/1.1" 200 17838
+[06/Jun/2019 17:43:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:44:51] "POST /admin/Offer/buyplan/20/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:44:51] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23307
+[06/Jun/2019 17:44:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:45:01] "GET /admin/Offer/buyplan/21/change/ HTTP/1.1" 200 17956
+[06/Jun/2019 17:45:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:45:20] "POST /admin/Offer/buyplan/21/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:45:20] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23309
+[06/Jun/2019 17:45:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:45:27] "GET /admin/Offer/buyplan/22/change/ HTTP/1.1" 200 17962
+[06/Jun/2019 17:45:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+/Workspace/Offer_Annonce_GreatParis/Offer/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 06, 2019 - 17:19:55
+Django version 2.2.2, using settings 'OfferGreatParis.settings'
+Starting development server at http://0.0.0.0:8002/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/Offer/buyplan/22/change/
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Offer_buyplan.commune does not exist
+LINE 1: ...fer_buyplan"."gpsLat", "Offer_buyplan"."gpsLong", "Offer_buy...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1543, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 758, in get_object
+    return queryset.get(**{field.name: object_id})
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/query.py", line 402, in get
+    num = len(clone)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/query.py", line 256, in __len__
+    self._fetch_all()
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1100, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Offer_buyplan.commune does not exist
+LINE 1: ...fer_buyplan"."gpsLat", "Offer_buyplan"."gpsLong", "Offer_buy...
+                                                             ^
+
+[06/Jun/2019 17:45:49] "POST /admin/Offer/buyplan/22/change/ HTTP/1.1" 500 183807
+[06/Jun/2019 17:46:02] "GET /admin/Offer/buyplan/22/change/ HTTP/1.1" 200 18424
+[06/Jun/2019 17:46:05] "POST /admin/Offer/buyplan/22/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:46:06] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23309
+[06/Jun/2019 17:46:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:46:12] "GET /admin/Offer/buyplan/23/change/ HTTP/1.1" 200 18442
+[06/Jun/2019 17:46:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:46:37] "POST /admin/Offer/buyplan/23/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:46:37] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23318
+[06/Jun/2019 17:46:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:46:52] "GET /admin/Offer/buyplan/24/change/ HTTP/1.1" 200 18448
+[06/Jun/2019 17:46:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:47:14] "POST /admin/Offer/buyplan/24/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:47:14] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23321
+[06/Jun/2019 17:47:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:47:19] "GET /admin/Offer/buyplan/25/change/ HTTP/1.1" 200 18428
+[06/Jun/2019 17:47:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:47:37] "POST /admin/Offer/buyplan/25/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:47:37] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 17:47:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:47:49] "GET /admin/Offer/buyplan/26/change/ HTTP/1.1" 200 18448
+[06/Jun/2019 17:47:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:48:07] "POST /admin/Offer/buyplan/26/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:48:07] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23323
+[06/Jun/2019 17:48:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:48:16] "GET /admin/Offer/buyplan/27/change/ HTTP/1.1" 200 18436
+[06/Jun/2019 17:48:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:48:34] "POST /admin/Offer/buyplan/27/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:48:34] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23317
+[06/Jun/2019 17:48:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:48:39] "GET /admin/Offer/buyplan/28/change/ HTTP/1.1" 200 18416
+[06/Jun/2019 17:48:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:49:45] "POST /admin/Offer/buyplan/28/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:49:46] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23309
+[06/Jun/2019 17:49:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:49:55] "GET /admin/Offer/buyplan/29/change/ HTTP/1.1" 200 18411
+[06/Jun/2019 17:49:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:50:22] "POST /admin/Offer/buyplan/29/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:50:23] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23305
+[06/Jun/2019 17:50:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:50:31] "GET /admin/Offer/buyplan/30/change/ HTTP/1.1" 200 18441
+[06/Jun/2019 17:50:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:50:53] "POST /admin/Offer/buyplan/30/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:50:53] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23320
+[06/Jun/2019 17:50:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:50:58] "GET /admin/Offer/buyplan/31/change/ HTTP/1.1" 200 18425
+[06/Jun/2019 17:50:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:51:54] "POST /admin/Offer/buyplan/31/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:51:54] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23316
+[06/Jun/2019 17:51:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:51:59] "GET /admin/Offer/buyplan/32/change/ HTTP/1.1" 200 18429
+[06/Jun/2019 17:51:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:52:31] "POST /admin/Offer/buyplan/32/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:52:31] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23318
+[06/Jun/2019 17:52:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:52:41] "GET /admin/Offer/buyplan/31/change/ HTTP/1.1" 200 18436
+[06/Jun/2019 17:52:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:52:49] "POST /admin/Offer/buyplan/31/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:52:49] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23316
+[06/Jun/2019 17:52:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:52:55] "GET /admin/Offer/buyplan/33/change/ HTTP/1.1" 200 18433
+[06/Jun/2019 17:52:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:54:05] "POST /admin/Offer/buyplan/33/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:54:05] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23314
+[06/Jun/2019 17:54:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:54:15] "GET /admin/Offer/buyplan/34/change/ HTTP/1.1" 200 18441
+[06/Jun/2019 17:54:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:54:25] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23108
+[06/Jun/2019 17:54:29] "GET /admin/Offer/buyplan/34/change/ HTTP/1.1" 200 18441
+[06/Jun/2019 17:54:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:54:53] "POST /admin/Offer/buyplan/34/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:54:53] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23318
+[06/Jun/2019 17:54:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:54:58] "GET /admin/Offer/buyplan/35/change/ HTTP/1.1" 200 18418
+[06/Jun/2019 17:54:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:55:41] "POST /admin/Offer/buyplan/35/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:55:41] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23306
+[06/Jun/2019 17:55:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:55:46] "GET /admin/Offer/buyplan/36/change/ HTTP/1.1" 200 18420
+[06/Jun/2019 17:55:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:56:15] "POST /admin/Offer/buyplan/36/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:56:15] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23307
+[06/Jun/2019 17:56:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:56:21] "GET /admin/Offer/buyplan/37/change/ HTTP/1.1" 200 18426
+[06/Jun/2019 17:56:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:56:48] "POST /admin/Offer/buyplan/37/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:56:48] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23310
+[06/Jun/2019 17:56:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:56:54] "GET /admin/Offer/buyplan/38/change/ HTTP/1.1" 200 18440
+[06/Jun/2019 17:56:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:57:17] "POST /admin/Offer/buyplan/38/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:57:17] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23317
+[06/Jun/2019 17:57:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:57:21] "GET /admin/Offer/buyplan/41/change/ HTTP/1.1" 200 18436
+[06/Jun/2019 17:57:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:58:38] "POST /admin/Offer/buyplan/41/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:58:38] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23302
+[06/Jun/2019 17:58:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:58:42] "GET /admin/Offer/buyplan/43/change/ HTTP/1.1" 200 18468
+[06/Jun/2019 17:58:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:59:43] "POST /admin/Offer/buyplan/43/change/ HTTP/1.1" 302 0
+[06/Jun/2019 17:59:43] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23317
+[06/Jun/2019 17:59:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 17:59:51] "GET /admin/Offer/buyplan/44/change/ HTTP/1.1" 200 18463
+[06/Jun/2019 17:59:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:00:32] "POST /admin/Offer/buyplan/44/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:00:32] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23315
+[06/Jun/2019 18:00:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:00:38] "GET /admin/Offer/buyplan/45/change/ HTTP/1.1" 200 18490
+[06/Jun/2019 18:00:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:01:19] "POST /admin/Offer/buyplan/45/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:01:19] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23311
+[06/Jun/2019 18:01:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:01:26] "GET /admin/Offer/buyplan/46/change/ HTTP/1.1" 200 18455
+[06/Jun/2019 18:01:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:02:05] "POST /admin/Offer/buyplan/46/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:02:05] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23307
+[06/Jun/2019 18:02:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:02:12] "GET /admin/Offer/buyplan/47/change/ HTTP/1.1" 200 18439
+[06/Jun/2019 18:02:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:03:01] "POST /admin/Offer/buyplan/47/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:03:01] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23302
+[06/Jun/2019 18:03:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:03:07] "GET /admin/Offer/buyplan/48/change/ HTTP/1.1" 200 18440
+[06/Jun/2019 18:03:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:03:54] "POST /admin/Offer/buyplan/48/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:03:55] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23302
+[06/Jun/2019 18:03:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:03:57] "GET /admin/Offer/buyplan/49/change/ HTTP/1.1" 200 18444
+[06/Jun/2019 18:03:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:04:27] "POST /admin/Offer/buyplan/49/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:04:27] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23308
+[06/Jun/2019 18:04:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:04:32] "GET /admin/Offer/buyplan/50/change/ HTTP/1.1" 200 18430
+[06/Jun/2019 18:04:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:05:11] "POST /admin/Offer/buyplan/50/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:05:12] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23302
+[06/Jun/2019 18:05:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:05:16] "GET /admin/Offer/buyplan/51/change/ HTTP/1.1" 200 18439
+[06/Jun/2019 18:05:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:05:58] "POST /admin/Offer/buyplan/51/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:05:58] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23306
+[06/Jun/2019 18:05:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:06:05] "GET /admin/Offer/buyplan/52/change/ HTTP/1.1" 200 18448
+[06/Jun/2019 18:06:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:06:36] "POST /admin/Offer/buyplan/52/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:06:36] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23306
+[06/Jun/2019 18:06:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:06:39] "GET /admin/Offer/buyplan/53/change/ HTTP/1.1" 200 18441
+[06/Jun/2019 18:06:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:07:12] "POST /admin/Offer/buyplan/53/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:07:12] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23307
+[06/Jun/2019 18:07:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:07:19] "GET /admin/Offer/buyplan/54/change/ HTTP/1.1" 200 18429
+[06/Jun/2019 18:07:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:07:40] "POST /admin/Offer/buyplan/54/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:07:40] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23301
+[06/Jun/2019 18:07:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:07:43] "GET /admin/Offer/buyplan/55/change/ HTTP/1.1" 200 18463
+[06/Jun/2019 18:07:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:08:22] "POST /admin/Offer/buyplan/55/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:08:22] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23315
+[06/Jun/2019 18:08:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:08:27] "GET /admin/Offer/buyplan/56/change/ HTTP/1.1" 200 18434
+[06/Jun/2019 18:08:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:09:15] "POST /admin/Offer/buyplan/56/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:09:15] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23300
+[06/Jun/2019 18:09:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:09:20] "GET /admin/Offer/buyplan/57/change/ HTTP/1.1" 200 18428
+[06/Jun/2019 18:09:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:10:02] "POST /admin/Offer/buyplan/57/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:10:02] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23306
+[06/Jun/2019 18:10:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:10:05] "GET /admin/Offer/buyplan/58/change/ HTTP/1.1" 200 18447
+[06/Jun/2019 18:10:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:10:35] "POST /admin/Offer/buyplan/58/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:10:36] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23308
+[06/Jun/2019 18:10:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:10:39] "GET /admin/Offer/buyplan/3/change/ HTTP/1.1" 200 18425
+[06/Jun/2019 18:10:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:11:17] "POST /admin/Offer/buyplan/3/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:11:18] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23308
+[06/Jun/2019 18:11:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:11:21] "GET /admin/Offer/buyplan/4/change/ HTTP/1.1" 200 18472
+[06/Jun/2019 18:11:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:11:43] "POST /admin/Offer/buyplan/4/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:11:44] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23333
+[06/Jun/2019 18:11:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:11:50] "GET /admin/Offer/buyplan/6/change/ HTTP/1.1" 200 18462
+[06/Jun/2019 18:11:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:12:07] "POST /admin/Offer/buyplan/6/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:12:07] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23328
+[06/Jun/2019 18:12:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:12:09] "GET /admin/Offer/buyplan/7/change/ HTTP/1.1" 200 18432
+[06/Jun/2019 18:12:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:12:19] "POST /admin/Offer/buyplan/7/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:12:19] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 18:12:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:12:22] "GET /admin/Offer/buyplan/8/change/ HTTP/1.1" 200 18434
+[06/Jun/2019 18:12:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:12:44] "POST /admin/Offer/buyplan/8/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:12:44] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23314
+[06/Jun/2019 18:12:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:12:48] "GET /admin/Offer/buyplan/9/change/ HTTP/1.1" 200 18437
+[06/Jun/2019 18:12:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:13:33] "POST /admin/Offer/buyplan/9/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:13:33] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23316
+[06/Jun/2019 18:13:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:13:37] "GET /admin/Offer/buyplan/10/change/ HTTP/1.1" 200 18301
+[06/Jun/2019 18:13:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:15:39] "POST /admin/Offer/buyplan/10/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:15:39] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23316
+[06/Jun/2019 18:15:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:15:44] "GET /admin/Offer/buyplan/11/change/ HTTP/1.1" 200 18442
+[06/Jun/2019 18:15:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:16:12] "POST /admin/Offer/buyplan/11/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:16:12] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23319
+[06/Jun/2019 18:16:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:16:19] "GET /admin/Offer/buyplan/12/change/ HTTP/1.1" 200 18442
+[06/Jun/2019 18:16:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:16:57] "POST /admin/Offer/buyplan/12/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:16:57] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23317
+[06/Jun/2019 18:16:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:17:24] "GET /admin/Offer/buyplan/13/change/ HTTP/1.1" 200 18431
+[06/Jun/2019 18:17:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:18:02] "POST /admin/Offer/buyplan/13/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:18:02] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23314
+[06/Jun/2019 18:18:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:18:07] "GET /admin/Offer/buyplan/14/change/ HTTP/1.1" 200 18425
+[06/Jun/2019 18:18:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:18:46] "POST /admin/Offer/buyplan/14/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:18:46] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23310
+[06/Jun/2019 18:18:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:19:02] "GET /admin/Offer/buyplan/15/change/ HTTP/1.1" 200 18438
+[06/Jun/2019 18:19:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:19:32] "POST /admin/Offer/buyplan/15/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:19:32] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 18:19:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:19:38] "GET /admin/Offer/buyplan/16/change/ HTTP/1.1" 200 18423
+[06/Jun/2019 18:19:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:19:58] "POST /admin/Offer/buyplan/16/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:19:59] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23309
+[06/Jun/2019 18:19:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:20:06] "GET /admin/Offer/buyplan/17/change/ HTTP/1.1" 200 18439
+[06/Jun/2019 18:20:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:20:43] "POST /admin/Offer/buyplan/17/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:20:43] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 18:20:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:20:48] "GET /admin/Offer/buyplan/18/change/ HTTP/1.1" 200 18453
+[06/Jun/2019 18:20:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:21:14] "POST /admin/Offer/buyplan/18/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:21:14] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23320
+[06/Jun/2019 18:21:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:21:25] "GET /admin/Offer/buyplan/19/change/ HTTP/1.1" 200 18439
+[06/Jun/2019 18:21:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:21:43] "POST /admin/Offer/buyplan/19/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:21:43] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 18:21:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:21:49] "GET /admin/Offer/buyplan/20/change/ HTTP/1.1" 200 18428
+[06/Jun/2019 18:21:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:22:26] "POST /admin/Offer/buyplan/20/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:22:27] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23307
+[06/Jun/2019 18:22:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:22:49] "GET /admin/Offer/buyplan/21/change/ HTTP/1.1" 200 18429
+[06/Jun/2019 18:22:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:23:23] "POST /admin/Offer/buyplan/21/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:23:24] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23309
+[06/Jun/2019 18:23:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:23:30] "GET /admin/Offer/buyplan/22/change/ HTTP/1.1" 200 18435
+[06/Jun/2019 18:23:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:24:03] "POST /admin/Offer/buyplan/22/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:24:04] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23309
+[06/Jun/2019 18:24:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:24:12] "GET /admin/Offer/buyplan/23/change/ HTTP/1.1" 200 18453
+[06/Jun/2019 18:24:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:24:31] "POST /admin/Offer/buyplan/23/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:24:31] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23318
+[06/Jun/2019 18:24:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:24:39] "GET /admin/Offer/buyplan/24/change/ HTTP/1.1" 200 18459
+[06/Jun/2019 18:24:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:25:10] "POST /admin/Offer/buyplan/24/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:25:10] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23321
+[06/Jun/2019 18:25:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:25:18] "GET /admin/Offer/buyplan/25/change/ HTTP/1.1" 200 18439
+[06/Jun/2019 18:25:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:25:52] "POST /admin/Offer/buyplan/25/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:25:52] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23313
+[06/Jun/2019 18:25:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:26:03] "GET /admin/Offer/buyplan/26/change/ HTTP/1.1" 200 18459
+[06/Jun/2019 18:26:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:26:26] "POST /admin/Offer/buyplan/26/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:26:26] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23323
+[06/Jun/2019 18:26:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:26:48] "GET /admin/Offer/buyplan/27/change/ HTTP/1.1" 200 18447
+[06/Jun/2019 18:26:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:27:06] "POST /admin/Offer/buyplan/27/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:27:06] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23317
+[06/Jun/2019 18:27:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:27:12] "GET /admin/Offer/buyplan/28/change/ HTTP/1.1" 200 18430
+[06/Jun/2019 18:27:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:27:39] "POST /admin/Offer/buyplan/28/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:27:40] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23309
+[06/Jun/2019 18:27:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:27:45] "GET /admin/Offer/buyplan/29/change/ HTTP/1.1" 200 18425
+[06/Jun/2019 18:27:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:28:17] "POST /admin/Offer/buyplan/29/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:28:17] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23305
+[06/Jun/2019 18:28:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:28:27] "GET /admin/Offer/buyplan/30/change/ HTTP/1.1" 200 18455
+[06/Jun/2019 18:28:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:28:41] "POST /admin/Offer/buyplan/30/change/ HTTP/1.1" 302 0
+[06/Jun/2019 18:28:41] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23320
+[06/Jun/2019 18:28:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:28:47] "GET /admin/Offer/buyplan/31/change/ HTTP/1.1" 200 18451
+[06/Jun/2019 18:28:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Jun/2019 18:28:53] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23108
+[07/Jun/2019 06:48:21] "GET /admin/auth/user/add/ HTTP/1.1" 200 5658
+[07/Jun/2019 06:48:21] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[07/Jun/2019 06:48:21] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[07/Jun/2019 07:31:20] "GET /admin/login/?next=%2Fadmin%2F&fbclid=IwAR0AX2iU5G_hW12lgQ6CAc0OjbquzhBJApOLGQUGwH5TbOBe4srOu1sGQ2c HTTP/1.1" 302 0
+[07/Jun/2019 07:31:20] "GET /admin/ HTTP/1.1" 200 10649
+[07/Jun/2019 07:31:21] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[07/Jun/2019 07:31:21] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[07/Jun/2019 07:31:21] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[07/Jun/2019 07:31:21] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[07/Jun/2019 07:31:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[07/Jun/2019 07:31:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[07/Jun/2019 07:31:21] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[07/Jun/2019 07:31:22] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[07/Jun/2019 07:31:22] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[07/Jun/2019 07:31:22] "GET /favicon.ico HTTP/1.1" 404 1985
+[07/Jun/2019 07:32:20] "GET /admin/Offer/buyplan/58/change/ HTTP/1.1" 200 18477
+[07/Jun/2019 07:32:20] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:32:20] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[07/Jun/2019 07:32:20] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[07/Jun/2019 07:32:21] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[07/Jun/2019 07:32:21] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[07/Jun/2019 07:32:40] "GET /admin/ HTTP/1.1" 200 10649
+[07/Jun/2019 07:32:42] "GET /admin/Offer/buyplan/57/change/ HTTP/1.1" 200 18456
+[07/Jun/2019 07:32:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:32:50] "GET /admin/ HTTP/1.1" 200 10649
+[07/Jun/2019 07:32:53] "GET /admin/Offer/buyplan/56/change/ HTTP/1.1" 200 18470
+[07/Jun/2019 07:32:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:33:00] "GET /admin/ HTTP/1.1" 200 10649
+[07/Jun/2019 07:33:03] "GET /admin/Offer/buyplan/55/change/ HTTP/1.1" 200 18489
+[07/Jun/2019 07:33:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:33:15] "GET /admin/ HTTP/1.1" 200 10649
+[07/Jun/2019 07:33:18] "GET /admin/Offer/buyplan/50/change/ HTTP/1.1" 200 18458
+[07/Jun/2019 07:33:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:33:23] "GET /admin/ HTTP/1.1" 200 10649
+[07/Jun/2019 07:36:16] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23107
+[07/Jun/2019 07:36:16] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[07/Jun/2019 07:36:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:36:17] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[07/Jun/2019 07:36:17] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[07/Jun/2019 07:39:42] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17933
+[07/Jun/2019 07:39:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:42:47] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 07:42:47] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 23647
+[07/Jun/2019 07:42:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:42:47] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[07/Jun/2019 07:43:44] "GET /admin/login/?next=%2Fadmin%2F&fbclid=IwAR10VMYkdM0K6w3jYzT1cJ8wBKrXCIzM2DhNG0dy4jvxR2ND8UNqXI98idg HTTP/1.1" 302 0
+[07/Jun/2019 07:43:45] "GET /admin/ HTTP/1.1" 200 10652
+[07/Jun/2019 07:43:58] "GET /admin/Offer/seller/ HTTP/1.1" 200 11533
+[07/Jun/2019 07:43:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:44:56] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17933
+[07/Jun/2019 07:44:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:47:33] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 07:47:34] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 24000
+[07/Jun/2019 07:47:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:49:07] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17933
+[07/Jun/2019 07:49:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:52:57] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 07:52:57] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 24359
+[07/Jun/2019 07:52:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:54:07] "GET /admin/Offer/buyplan/22/change/ HTTP/1.1" 200 18465
+[07/Jun/2019 07:54:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:54:32] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 24155
+[07/Jun/2019 07:56:18] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17933
+[07/Jun/2019 07:56:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:56:44] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[07/Jun/2019 07:56:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 07:56:44] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[07/Jun/2019 07:57:49] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[07/Jun/2019 07:57:50] "GET /admin/Offer/seller/ HTTP/1.1" 200 12114
+[07/Jun/2019 07:57:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:00:30] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17988
+[07/Jun/2019 08:00:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:02:09] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:02:09] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 24687
+[07/Jun/2019 08:02:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:06:07] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[07/Jun/2019 08:06:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:06:27] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17988
+[07/Jun/2019 08:06:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:09:12] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:09:13] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 25048
+[07/Jun/2019 08:09:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:11:45] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17988
+[07/Jun/2019 08:11:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:13:52] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:13:52] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 25393
+[07/Jun/2019 08:13:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:15:28] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17988
+[07/Jun/2019 08:15:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:18:11] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:18:12] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 25743
+[07/Jun/2019 08:18:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:34:46] "GET /admin/Offer/seller/ HTTP/1.1" 200 11917
+[07/Jun/2019 08:34:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:34:55] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 25544
+[07/Jun/2019 08:35:12] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17988
+[07/Jun/2019 08:35:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:37:16] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:37:16] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 26096
+[07/Jun/2019 08:37:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:41:04] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17988
+[07/Jun/2019 08:41:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:43:32] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:43:32] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 26429
+[07/Jun/2019 08:43:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:46:12] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 17988
+[07/Jun/2019 08:46:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:48:10] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:48:11] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 26783
+[07/Jun/2019 08:48:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:48:32] "GET /admin/Offer/seller/ HTTP/1.1" 200 11917
+[07/Jun/2019 08:48:44] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[07/Jun/2019 08:48:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:50:06] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:50:06] "GET /admin/Offer/seller/ HTTP/1.1" 200 12484
+[07/Jun/2019 08:50:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:50:17] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 18036
+[07/Jun/2019 08:50:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:53:00] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 08:53:00] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 27129
+[07/Jun/2019 08:53:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:57:43] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 18036
+[07/Jun/2019 08:57:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 08:58:28] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 26932
+[07/Jun/2019 08:58:38] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 18036
+[07/Jun/2019 09:01:48] "GET /admin/Offer/ HTTP/1.1" 200 6333
+[07/Jun/2019 09:01:51] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 26932
+[07/Jun/2019 09:01:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 09:04:27] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 18036
+[07/Jun/2019 09:04:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 09:06:44] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 09:06:45] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 27476
+[07/Jun/2019 09:06:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 09:10:53] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 18036
+[07/Jun/2019 09:10:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 09:14:56] "GET /admin/Offer/seller/add/ HTTP/1.1" 200 10603
+[07/Jun/2019 09:14:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[07/Jun/2019 09:15:53] "POST /admin/Offer/seller/add/ HTTP/1.1" 302 0
+[07/Jun/2019 09:15:54] "GET /admin/Offer/seller/ HTTP/1.1" 200 12845
+[07/Jun/2019 09:15:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Internal Server Error: /admin/Offer/buyplan/add/
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "seller_id" violates not-null constraint
+DETAIL:  Failing row contains (71, null, null, 2019-06-07 09:17:10.027835+00, 2019-06-07 09:17:10.027841+00, null, LES ALISIERS, null, 48.733500, 2.247112, 41, null, null, https://immobilierneuf.leboncoin.fr/annonce/378/programme-neuf/a..., null, null, 2, null, f, 232700, null, null, null, null, b61c4663b5ba4af392d9e21bae37e35b5360, null, 91300, MASSY).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1088, in save_model
+    obj.save()
+  File "/Workspace/Offer_Annonce_GreatParis/Offer/models.py", line 489, in save
+    return super(BuyPlan, self).save(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/bussiere/.local/share/virtualenvs/Offer_Annonce_GreatParis-tLt2XzpX/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "seller_id" violates not-null constraint
+DETAIL:  Failing row contains (71, null, null, 2019-06-07 09:17:10.027835+00, 2019-06-07 09:17:10.027841+00, null, LES ALISIERS, null, 48.733500, 2.247112, 41, null, null, https://immobilierneuf.leboncoin.fr/annonce/378/programme-neuf/a..., null, null, 2, null, f, 232700, null, null, null, null, b61c4663b5ba4af392d9e21bae37e35b5360, null, 91300, MASSY).
+
+[07/Jun/2019 09:17:10] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 500 211679
+[07/Jun/2019 09:17:13] "GET /admin/Offer/buyplan/add/ HTTP/1.1" 200 18076
+[07/Jun/2019 09:17:23] "POST /admin/Offer/buyplan/add/ HTTP/1.1" 302 0
+[07/Jun/2019 09:17:23] "GET /admin/Offer/buyplan/ HTTP/1.1" 200 27823
+[07/Jun/2019 09:17:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
