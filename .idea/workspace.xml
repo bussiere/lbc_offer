@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a66737-7bef-4e5b-87a9-c8d7981d87c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Offer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Micro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Micro/ConvertLbc/ConvertLbc.go" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/ConvertLbc/ConvertLbc.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,11 +115,6 @@
             <path>
               <item name="Offer_Annonce_GreatParis" type="b2602c69:ProjectViewProjectNode" />
               <item name="Offer_Annonce_GreatParis" type="462c0819:PsiDirectoryNode" />
-              <item name="Offer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Offer_Annonce_GreatParis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Offer_Annonce_GreatParis" type="462c0819:PsiDirectoryNode" />
               <item name="OfferGreatParis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -187,17 +184,20 @@
       <workItem from="1559762828371" duration="2089000" />
       <workItem from="1559825261340" duration="628000" />
       <workItem from="1559841470213" duration="670000" />
+      <workItem from="1559894159892" duration="599000" />
+      <workItem from="1560005372182" duration="612000" />
+      <workItem from="1560012407839" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8319000" />
+    <option name="totallyTimeSpent" value="10129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="36" width="1928" height="1048" extended-state="6" />
+    <frame x="0" y="36" width="1920" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26627535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
