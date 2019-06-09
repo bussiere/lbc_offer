@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a66737-7bef-4e5b-87a9-c8d7981d87c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DeleteOfferBuy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Export_09_06_2019.json" beforeDir="false" afterPath="$PROJECT_DIR$/Export_09_06_2019.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Micro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Micro/ConvertLbc/ConvertLbc.go" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/ConvertLbc/ConvertLbc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Micro/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Micro/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0002_auto_20190404_1307.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0003_auto_20190404_1317.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0004_auto_20190404_1321.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0005_auto_20190404_1332.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0006_auto_20190405_1410.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0007_auto_20190405_1456.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0008_auto_20190605_1944.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0009_buyplan_postal_code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0010_buyplan_commune.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0011_auto_20190608_2012.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0012_buy_ad_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0013_auto_20190609_0950.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0014_buy_postal_code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0015_buy_pic1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/migrations/0016_auto_20190609_1023.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OfferGreatParis/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OfferGreatParis/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Offer/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="82" column="110" selection-start-line="82" selection-start-column="110" selection-end-line="82" selection-end-column="110" />
+            <state relative-caret-position="273">
+              <caret line="95" column="123" selection-start-line="95" selection-start-column="123" selection-end-line="95" selection-end-column="123" />
               <folding>
                 <element signature="e#29#61#0" expanded="true" />
               </folding>
@@ -30,8 +51,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OfferGreatParis/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1376">
-              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="32" />
+            <state relative-caret-position="781">
+              <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DeleteOfferBuy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Offer/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="337" column="44" selection-start-line="337" selection-start-column="44" selection-end-line="337" selection-end-column="44" />
+            <state relative-caret-position="580">
+              <caret line="372" column="79" selection-start-line="372" selection-start-column="79" selection-end-line="372" selection-end-column="79" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -66,6 +99,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -88,9 +128,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CreateUserSmall.py" />
+        <option value="$PROJECT_DIR$/Offer/models.py" />
         <option value="$PROJECT_DIR$/OfferGreatParis/settings.py" />
         <option value="$PROJECT_DIR$/Offer/admin.py" />
-        <option value="$PROJECT_DIR$/Offer/models.py" />
+        <option value="$PROJECT_DIR$/DeleteOfferBuy.py" />
       </list>
     </option>
   </component>
@@ -116,7 +157,17 @@
             <path>
               <item name="Offer_Annonce_GreatParis" type="b2602c69:ProjectViewProjectNode" />
               <item name="Offer_Annonce_GreatParis" type="462c0819:PsiDirectoryNode" />
+              <item name="Micro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Offer_Annonce_GreatParis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Offer_Annonce_GreatParis" type="462c0819:PsiDirectoryNode" />
               <item name="Offer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Offer_Annonce_GreatParis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Offer_Annonce_GreatParis" type="462c0819:PsiDirectoryNode" />
+              <item name="OfferGreatParis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -146,7 +197,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.DeleteOfferBuy">
+    <configuration name="DeleteOfferBuy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Offer_Annonce_GreatParis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DeleteOfferBuy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Offer_Annonce_GreatParis" type="Python.DjangoServer" factoryName="Django server">
       <module name="Offer_Annonce_GreatParis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,6 +243,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.DeleteOfferBuy" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -189,23 +267,23 @@
       <workItem from="1560005372182" duration="612000" />
       <workItem from="1560012407839" duration="599000" />
       <workItem from="1560021168533" duration="1665000" />
-      <workItem from="1560070434108" duration="3005000" />
+      <workItem from="1560070434108" duration="7048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14799000" />
+    <option name="totallyTimeSpent" value="18842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="36" width="1920" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27267876" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27267876" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -226,24 +304,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Offer_Annonce_GreatParis$DeleteOfferBuy.coverage" NAME="DeleteOfferBuy Coverage Results" MODIFIED="1560085232780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Offer/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="82" column="110" selection-start-line="82" selection-start-column="110" selection-end-line="82" selection-end-column="110" />
-          <folding>
-            <element signature="e#29#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OfferGreatParis/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1376">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CreateUserSmall.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -257,12 +321,39 @@
     <entry file="file://$PROJECT_DIR$/Offer/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/OfferGreatParis/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Offer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="337" column="44" selection-start-line="337" selection-start-column="44" selection-end-line="337" selection-end-column="44" />
+        <state relative-caret-position="580">
+          <caret line="372" column="79" selection-start-line="372" selection-start-column="79" selection-end-line="372" selection-end-column="79" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Offer/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="95" column="123" selection-start-line="95" selection-start-column="123" selection-end-line="95" selection-end-column="123" />
+          <folding>
+            <element signature="e#29#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeleteOfferBuy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

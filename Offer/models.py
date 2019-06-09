@@ -32,9 +32,9 @@ class Seller(models.Model):
     email = models.CharField(blank=True, null=True, max_length=200)
     note = models.CharField(blank=True, null=True, max_length=200)
     adresse_uuid = models.CharField(blank=True, null=True, max_length=48)
-    geoHash = models.CharField(blank=True, null=True, max_length=200)
-    gpsLat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
-    gpsLong = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    geohash = models.CharField(blank=True, null=True, max_length=200)
+    gps_lat = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
+    gps_long = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=6)
     uuid = models.CharField(blank=True, null=True, max_length=48)
     #history = HistoricalRecords()
     def __str__(self):
@@ -370,10 +370,10 @@ class Buy(models.Model):
     uuid = models.CharField(blank=True, null=True, max_length=48)
     #history = HistoricalRecords()
     def __str__(self):
-        return self.name + ":" + str(self.id) + ":" + self.codePostal
+        return str(self.name) + ":" + str(self.id) + ":" + str(self.postal_code)
 
     def __unicode__(self):
-        return self.name + ":" + str(self.id)
+        return str(self.name) + ":" + str(self.id)
 
     def save(self, *args, **kwargs):
         """ On save, update timestamps """

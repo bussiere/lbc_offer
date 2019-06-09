@@ -11,9 +11,12 @@ import (
 	"github.com/lib/pq"
 	_ "github.com/lib/pq"
 	"github.com/mmcloughlin/geohash"
+	"golang.org/x/text/transform"
+	"golang.org/x/text/unicode/norm"
 	"strconv"
 	"strings"
 	"time"
+	"unicode"
 )
 
 type RawOffer struct {
@@ -129,22 +132,21 @@ type OfferDB struct {
 }
 
 type Seller struct {
-
-	id integer NOT NULL DEFAULT nextval('"Offer_seller_id_seq"'::regclass),
-	created timestamp with time zone,
-	modified timestamp with time zone,
-	name character varying(200),
-	url character varying(200),
-	contact character varying(200),
-	phone character varying(200),
-	email character varying(200),
-	note character varying(200),
-	adresse_uuid character varying(48),
-	"geoHash" character varying(200),
-	"gpsLat" numeric(9,6),
-	"gpsLong" numeric(9,6),
-	uuid character varying(48),
-	group_id integer,
+	Id          int             `db:"id"`
+	GroupeId sql.NullInt64 `db:"group_id"`
+	Modified    pq.NullTime     `db:"modified"`
+	Created     pq.NullTime     `db:"created"`
+	Uuid        sql.NullString  `db:"uuid"`
+	Name        sql.NullString  `db:"name"`
+	AdresseUuid sql.NullString  `db:"adresse_uuid"`
+	Geohash     sql.NullString  `db:"geohash"`
+	GpsLat      sql.NullFloat64 `db:"gps_lat"`
+	GpsLong     sql.NullFloat64 `db:"gps_long"`
+	Url sql.NullString  `db:"url"`
+	Contact sql.NullString `db:"contact"`
+	Phone sql.NullString `db:"phone"`
+	Email sql.NullString `db:"email"`
+	Note sql.NullString `db:"note"`
 }
 
 func convertLbc(c *gin.Context) {
@@ -174,11 +176,14 @@ func DecodeRaw(rawOfferLbc RawOfferLbc) {
 	query = `SELECT * FROM  "Offer_buy" WHERE ad_id=$1`
 
 	fmt.Println("inside convert")
-
+	var keyMeter int
+	var keyRoom int
+	var keyType int
 	for _, ad := range rawOfferLbc.Data.Ads {
 		var offerDB OfferDB
 		var offers []OfferDB
-		if ad.CategoryName == "Ventes immobili\u00e8res" && len(ad.Price) == 1 {
+
+		if ad.CategoryName == "Ventes immobili\u00e8res" && len(ad.Price) == 1 && ad.Price[0] > 10000 {
 			err := db.Select(&offers, query, ad.ListID)
 			if err != nil {
 				panic(err)
@@ -188,6 +193,21 @@ func DecodeRaw(rawOfferLbc RawOfferLbc) {
 				offerDB.AdId.Int64 = int64(ad.ListID)
 				offerDB.AdId.Valid = true
 
+				offerDB.UrlOffer.String = ad.URL
+				offerDB.UrlOffer.Valid = true
+
+				offerDB.Origin.String = "lbc_db"
+				offerDB.Origin.Valid = true
+
+				offerDB.Uuid.String = uuid.New().String()
+				offerDB.Uuid.Valid = true
+
+				offerDB.Created.Time = time.Now()
+				offerDB.Created.Valid = true
+
+				offerDB.Name.String = ad.Subject
+				offerDB.Name.Valid = true
+
 				offerDB.DateAd.Time, err = time.Parse("2006-01-02 15:04:05", ad.FirstPublicationDate)
 				if err != nil {
 					panic(err)
@@ -196,25 +216,34 @@ func DecodeRaw(rawOfferLbc RawOfferLbc) {
 				offerDB.Price.Float64 = float64(ad.Price[0])
 				offerDB.Price.Valid = true
 
-				offerDB.CatOne.String = ad.Attributes[0].ValueLabel
-				offerDB.CatOne.Valid = true
 				// the key for the m2
-				var keyMeter int
-				var keyRoom int
+
 				keyRoom = -1
+				keyType = -1
+				keyMeter = -1
 				for index, attribute := range ad.Attributes {
 					if attribute.Key == "square" {
 						keyMeter = index
 					}
-					if attribute.Key == "room" {
+					if attribute.Key == "rooms" {
 						keyRoom = index
 					}
 
+					if (attribute.ValueLabel == "Maison" || attribute.ValueLabel == "Appartement" || attribute.ValueLabel == "Terrain" ){
+						keyType = index
+					}
 				}
+				if (keyType == -1 || keyRoom == -1 || keyMeter == -1 ){
+					return
+				}
+
+				offerDB.CatOne.String = ad.Attributes[keyType].ValueLabel
+				offerDB.CatOne.Valid = true
 
 				offerDB.M2.Int64, err = strconv.ParseInt(ad.Attributes[keyMeter].Value, 10, 64)
 				if err != nil {
-					panic(err)
+					//panic(err)
+					return
 				}
 
 				offerDB.M2.Valid = true
@@ -222,12 +251,14 @@ func DecodeRaw(rawOfferLbc RawOfferLbc) {
 				if keyRoom != - 1 {
 					offerDB.Piece.Int64, err = strconv.ParseInt(ad.Attributes[keyRoom].Value, 10, 64)
 					if err != nil {
-						panic(err)
+						//panic(err)
+						return
 					}
 
 					offerDB.Piece.Valid = true
+				} else {
+					return
 				}
-
 				// location block
 				offerDB.Commune.String = ad.Location.City
 				offerDB.Commune.Valid = true
@@ -244,7 +275,10 @@ func DecodeRaw(rawOfferLbc RawOfferLbc) {
 
 
 				// description
-				offerDB.Description.String = ad.Body
+				if len(ad.Body) > 800 {
+					ad.Body = ad.Body[:799]
+				}
+				offerDB.Description.String = RemoveAccent(ad.Body)
 				offerDB.Description.Valid = true
 
 				offerDB.Pic1.String = ad.Images.ThumbURL
@@ -261,7 +295,7 @@ func DecodeRaw(rawOfferLbc RawOfferLbc) {
 				}
 				//tx.NamedExec(`INSERT INTO "Offer_buy" (ad_id, date_ad, price,cat_one,m2,piece,commune,postal_code,gps_lat,gps_long,geohash,description,pic1) VALUES (:ad_id, :date_ad, :price,:m2,:piece,:commune,:postal_code,:gps_lat,:gps_long,:geohash,:description,:pic1)`, offerDB)
 				//TODO :  need to optimize
-				tx.MustExec(`INSERT INTO "Offer_buy"  (ad_id,available) VALUES ($1,$2)`, offerDB.AdId,true)
+				tx.MustExec(`INSERT INTO "Offer_buy"  (ad_id,available,seller_id,name,piece,m2,price,cat_one,date_ad,commune,postal_code,gps_lat,gps_long,geohash,description,pic1,uuid,url_offer,origin,created) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20)`, offerDB.AdId,true,lbc.Id,offerDB.Name,offerDB.Piece,offerDB.M2,offerDB.Price,offerDB.CatOne,offerDB.DateAd,offerDB.Commune,offerDB.PostalCode,offerDB.GpsLat,offerDB.GpsLong,offerDB.Geohash,offerDB.Description,offerDB.Pic1,offerDB.Uuid,offerDB.UrlOffer,offerDB.Origin,offerDB.Created)
 
 				err = tx.Commit()
 				if err != nil {
@@ -277,32 +311,77 @@ func DecodeRaw(rawOfferLbc RawOfferLbc) {
 func Test() {
 	var query string
 	var offers []OfferDB
+	var sellers []Seller
+	var err error
 	var test string
 	test = uuid.New().String()
 	fmt.Println(test)
 	query = `SELECT * FROM  "Offer_buy" WHERE id=$1`
-	err := db.Select(&offers, query, 1)
+	err = db.Select(&offers, query, 1)
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println(offers)
-	fmt.Println(offers[0].Geohash)
+//	fmt.Println(offers[0].Geohash)
+	query = `SELECT * FROM  "Offer_seller" WHERE id=$1`
+	err = db.Select(&sellers, query, 1)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(sellers)
 
 }
 
-var db *sqlx.DB
+func isMn(r rune) bool {
+	return unicode.Is(unicode.Mn, r) // Mn: nonspacing marks
+}
+func RemoveAccent(name string) string{
+	t := transform.Chain(norm.NFD, transform.RemoveFunc(isMn), norm.NFC)
+	result, _, _ := transform.String(t, name)
+	return result
+}
 
 func InitSeller() {
+	var seller Seller
+	var sellers []Seller
+	var err error
+	seller.Name.String = "lbc"
+	seller.Name.Valid = true
+	var query string
+	query = `SELECT * FROM  "Offer_seller" WHERE name=$1`
+	err = db.Select(&sellers, query, seller.Name)
+	if err != nil {
+		panic(err)
+	}
+	if len(sellers) == 0 {
+		tx := db.MustBegin()
+		tx.MustExec(`INSERT INTO "Offer_seller"  (name) VALUES ($1)`, seller.Name)
+
+		err = tx.Commit()
+		if err != nil {
+			panic(err)
+		}
+		query = `SELECT * FROM  "Offer_seller" WHERE name=$1`
+		err = db.Select(&sellers, query, seller.Name)
+		if err != nil {
+			panic(err)
+		}
+		lbc = sellers[0]
+
+	} else {
+		lbc = sellers[0]
+	}
 
 }
-
+var db *sqlx.DB
+var lbc Seller
 func main() {
 	var err error
 	db, err = sqlx.Connect("postgres", "user=admincomposcan dbname=offergreatparis password=KangourouIvre666 sslmode=disable")
 	if err != nil {
 		panic(err)
 	}
-	//Test()
+	Test()
 	InitSeller()
 	fmt.Println("begin")
 	r := gin.Default()

@@ -91,9 +91,9 @@ class BuyPlan_Admin(admin.ModelAdmin):
     form =  BuyPlan_Form
 
 class Buy_Admin(admin.ModelAdmin):
-    list_display = ("name","created","cat_one","cat_two","price","m2")
-    search_fields = ("name","created","cat_one","cat-two","price","m2")
-    actions = [export_as_csv_action("CSV Export", fields=["name","created","cat_one","cat_two","price","m2"])]
+    list_display = ("ad_id","name","created","cat_one","cat_two","price","m2","piece")
+    search_fields = ("ad_id","name","created","cat_one","cat-two","price","m2","piece")
+    actions = [export_as_csv_action("CSV Export", fields=["ad_id","name","created","cat_one","cat_two","price","m2","piece"])]
     form =  Buy_Form
 
 admin.site.register(GroupSeller, GroupSeller_Admin)
