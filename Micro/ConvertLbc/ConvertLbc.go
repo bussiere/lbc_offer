@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 	"github.com/jmoiron/sqlx"
 	"github.com/lib/pq"
-	_	"github.com/lib/pq"
+	_ "github.com/lib/pq"
 	"strings"
 	"time"
+	"github.com/mmcloughlin/geohash"
 )
-
-
 
 
 type RawOffer struct {
@@ -103,30 +103,27 @@ type OfferDB struct {
 	Created       pq.NullTime    `db:"created"`
 	Uuid          sql.NullString `db:"uuid"`
 	Name sql.NullString `db:"name"`
-	GeohashFile sql.NullString `db:"geohash"`
-	GpsLatFile sql.NullFloat64 `db:"gps_lat"`
-	GpsLongFile sql.NullFloat64 `db:"gps_long"`
-
-	cat_one character varying(1),
-	cat_two character varying(1),
-
-	date_ad timestamp with time zone,
-	name character varying(200),
-	m2 integer,
-	m2_1 integer,
-	adresse_uuid character varying(48),
-	url_offer character varying(500),
-	note character varying(200),
-	description character varying(300),
-	piece integer,
-	chambre integer,
-	available boolean NOT NULL,
-	price double precision,
-	ref1 character varying(200),
-	ref2 character varying(200),
-	score integer,
-	origin character varying(64),
-	seller_id integer NOT NULL,
+	Geohash sql.NullString `db:"geohash"`
+	GpsLat sql.NullFloat64 `db:"gps_lat"`
+	GpsLong sql.NullFloat64 `db:"gps_long"`
+	CatOne sql.NullString `db:"cat_one"`
+	CatTwo sql.NullString `db:"cat_two"`
+	DateAd pq.NullTime `db:"date_ad"`
+    M2 sql.NullInt64 `db:"m2"`
+	M2Bis sql.NullInt64 `db:"m2_1"`
+	AdresseUuid sql.NullString `db:"adresse_uuid"`
+	UrlOffer sql.NullString  `db:"url_offer"`
+	Note sql.NullString `db:"note"`
+	Description sql.NullString `db:"description"`
+	Piece sql.NullInt64 `db:"piece"`
+	Chambre sql.NullInt64 `db:"chambre"`
+	Available bool `db:"available"`
+	Price sql.NullFloat64 `db:"price"`
+	Ref1 sql.NullString `db:"ref1"`
+	Ref2 sql.NullString `db:"ref2"`
+	Score sql.NullInt64 `db:"score"`
+	Origin sql.NullString `db:"origin"`
+	SellerId sql.NullInt64 `db:"seller_id"`
 }
 
 func convertLbc(c *gin.Context) {
@@ -148,15 +145,30 @@ func convertLbc(c *gin.Context) {
 	fmt.Println(rawOfferLbc)
 
 }
+func Test(){
+	var query string
+	var offers  []OfferDB
+	var test string
+	test = uuid.New().String()
+	fmt.Println(test)
+	query = `SELECT * FROM  "Offer_buy" WHERE id=$1`
+	err := db.Select(&offers, query,1)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(offers)
+	fmt.Println(offers[0].Geohash)
 
+}
 
 var db *sqlx.DB
 func main() {
 	var err error
-	db, err = sqlx.Connect("postgres", "user=admincomposcan dbname=geomastermicro password=KangourouIvre666 sslmode=disable")
+	db, err = sqlx.Connect("postgres", "user=admincomposcan dbname=offergreatparis password=KangourouIvre666 sslmode=disable")
 	if err != nil {
 		panic(err)
 	}
+	Test()
 	fmt.Println("begin")
 	r := gin.Default()
 	r.Use(cors.Default())
