@@ -9,7 +9,6 @@ import (
 	"github.com/umahmood/haversine"
 	"math"
 	"net/http"
-	"sort"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -17,35 +16,20 @@ import (
 
 type Pos struct {
 	Geohash string `json:"Geohash"`
-	NbMinute int `json:"NbMinute"`
+	NbMinuteCar int `json:"NbMinuteCar"`
+	NbMinuteWalk int `json:"NbMinuteWalk"`
 }
 
 type Response struct {
 	Status        string  `json:"Status"`
-	DistanceKm float64 `json:"DistanceKm"`
+	Offers []OfferResponse `json:"Offers"`
 }
 
 type Error struct {
 	Message string `json:"Message"`
 }
 
-type GpsPos struct {
-	GpsLat  float64 `json:"GpsLat"`
-	GpsLong float64 `json:"GpsLong"`
-}
-type GeoHash struct {
-	GeoHash  string `json:"GeoHash"`
 
-}
-type QueryData struct {
-	PosOne GpsPos `json:"PosOne"`
-	PosTwo GpsPos `json:"PosTwo"`
-}
-
-type QueryData2 struct {
-	PosOne GeoHash `json:"PosOne"`
-	PosTwo GeoHash `json:"PosTwo"`
-}
 
 type OfferDB struct {
 	Id          int             `db:"id"`
@@ -122,8 +106,11 @@ type OfferResponse struct {
 	DistanceCar float64 `json:"DistanceCar"`
 	TimeTravelWM  float64 `json:"TimeTravelWM"`
 	TimeTravelCM  float64 `json:"TimeTravelCM"`
+	UrlMap    string `json:"TimeTravelCM"`
 
 }
+
+// Todo adding seller selection
 
 // haversin(?) function
 func hsin(theta float64) float64 {
@@ -145,134 +132,91 @@ func Distance(lat1, lon1, lat2, lon2 float64) float64 {
 	point1 := haversine.Coord{Lat: lat1, Lon: lon1}  // Oxford, UK
 	point2  := haversine.Coord{Lat: lat2, Lon: lon2}  // Turin, Italy
 	_, km := haversine.Distance(point1, point2)
+	km = km/1000
 	return km
 }
 
-func Process(query QueryData) Response {
-	var response Response
-	response.DistanceKm = Distance(query.PosOne.GpsLat, query.PosOne.GpsLong, query.PosTwo.GpsLat, query.PosTwo.GpsLong)
-	response.Status = "Ok"
-	return response
-
-}
-func Process2(query QueryData2) Response {
-	var response Response
-	lat1, lng1 := geohash.Decode(query.PosOne.GeoHash)
-	lat2, lng2 := geohash.Decode(query.PosTwo.GeoHash)
-	response.DistanceKm = Distance(lat1, lng1, lat2, lng2)
-	response.Status = "Ok"
-	return response
-
-}
 
 
-func CalculateDistance(c *gin.Context) {
 
-	var query QueryData
 
-	if c.BindJSON(&query) == nil {
 
-		c.JSON(200, Process(query))
-	} else {
-		var errorInputData Error
-		errorInputData.Message = "Incorrect input data"
-		c.JSON(500, errorInputData)
+
+func getDistanceOffer (pos Pos,offers *[]OfferResponse){
+	posGpsLat,posGpsLong := geohash.Decode(pos.Geohash)
+	for index, offer := range *offers  {
+		offer.DistanceFly = Distance(posGpsLat, posGpsLong, offer.GpsLat, offer.GpsLong)
+		offer.DistanceCar = offer.DistanceFly * flyCar
+		offer.TimeTravelWM = (offer.DistanceCar  / walkSpeed)
+		offer.TimeTravelCM = (offer.DistanceCar  / kmM)
+		(*offers)[index] = offer
 	}
-
-}
-func CalculateDistanceHash(c *gin.Context) {
-
-	var query QueryData2
-
-	if c.BindJSON(&query) == nil {
-
-		c.JSON(200, Process2(query))
-	} else {
-		var errorInputData Error
-		errorInputData.Message = "Incorrect input data"
-		c.JSON(500, errorInputData)
-	}
-
 }
 
 
-
-func hsin(theta float64) float64 {
-	return math.Pow(math.Sin(theta/2), 2)
-}
-func Distance(lat1, lon1, lat2, lon2 float64) float64 {
-	// convert to radians
-	// must cast radius as float to multiply later
-	var la1, lo1, la2, lo2, r float64
-	la1 = lat1 * math.Pi / 180
-	lo1 = lon1 * math.Pi / 180
-	la2 = lat2 * math.Pi / 180
-	lo2 = lon2 * math.Pi / 180
-
-	r = 6378100 // Earth radius in METERS
-
-	// calculate
-	h := hsin(la2-la1) + math.Cos(la1)*math.Cos(la2)*hsin(lo2-lo1)
-
-	return 2 * r * math.Asin(math.Sqrt(h))
-}
-
-
-func getDistanceOffer {
-	for _, station := range stations {
-		var stationDistance StationDistance
-		stationDistance.Station = station
-		// response in kms
-		stationDistance.DistanceFly = Distance(pos.GpsLat.Float64, pos.GpsLong.Float64, station.GpsLat.Float64, station.GpsLong.Float64) / 1000
-		stationDistance.DistanceWalk = stationDistance.DistanceFly * flyCar
-		stationDistance.TimeTravelWM = (stationDistance.DistanceWalk / walkSpeed)
-		stationDistance.TimeTravelCM = (stationDistance.DistanceWalk / kmM)
-		response.StationDistance = append(response.StationDistance, stationDistance)
-
-	}
-	sort.Slice(response.StationDistance, func(i, j int) bool {
-		return response.StationDistance[i].DistanceFly < response.StationDistance[j].DistanceFly
-	})
-}
-
-
-func getBuyFromHash(pos Pos) []OfferResponse {
+func getBuyFromHash(pos Pos,response *[]OfferResponse) {
 	var query string
-	var offers []OfferDB
 	var err error
-	query = `SELECT * FROM  "Offer_buy" WHERE geohash LIKE $1 || '%' AND available == TRUE ORDER BY date_ad`
+	var offers []OfferDB
+	query = `SELECT * FROM  "Offer_buy" WHERE geohash LIKE $1 || '%' AND available ORDER BY date_ad`
 	fmt.Println(query)
-	err = db.Select(&offers, query,pos.Geohash[:4])
+	err = db.Select(&offers, query, pos.Geohash[:4])
 	if err != nil {
 		panic(err)
 	}
-	var response []OfferResponse
-	for _,offerDb := range offers {
+	for _, offerDb := range offers {
 		var offerR OfferResponse
 		offerR.Geohash = offerDb.Geohash.String
 		offerR.UrlOffer = offerDb.UrlOffer.String
-
-
-		response = append(response,offerR)
+		offerR.Price = offerDb.Price.Float64
+		offerR.Uuid = offerDb.Uuid.String
+		offerR.Pic1 = offerDb.Pic1.String
+		offerR.GpsLat = offerDb.GpsLat.Float64
+		offerR.GpsLong = offerDb.GpsLong.Float64
+		offerR.Description = offerDb.Description.String
+		offerR.PostalCode = offerDb.PostalCode.String
+		offerR.Commune = offerDb.Commune.String
+		offerR.DateAd = offerDb.DateAd.Time
+		offerR.M2 = offerDb.M2.Int64
+		offerR.Piece = offerDb.Piece.Int64
+		offerR.Seller = "LBC"
+		*response = append(*response, offerR)
 	}
-	return response
 }
+
+func sortTime(pos Pos,offers *[]OfferResponse){
+	for index,offer := range *offers {
+		if (int(offer.TimeTravelCM) > pos.NbMinuteCar && int(offer.TimeTravelWM) > pos.NbMinuteWalk) {
+			*offers = append((*offers)[:index], (*offers)[index+1:]...)
+		}
+	}
+}
+
 
 func getOfferFromHash(c *gin.Context) {
 	var pos Pos
 	var response Response
 	c.BindJSON(&pos)
     var offers []OfferResponse
-	offers = getBuyFromHash(pos)
+	getBuyFromHash(pos,&offers)
+	getDistanceOffer(pos,&offers)
+	sortTime(pos,&offers)
 
 
-
+    response.Offers = offers
 	response.Status = "Ok"
 	c.JSON(http.StatusOK, response)
 }
 
+
 var db *sqlx.DB
+var kmM float64
+var flyCar float64
+var walkSpeed float64
 func main() {
+	kmM = (0.026480)*60
+	flyCar = 1.502274
+	walkSpeed = (0.00125)*60
 	var err error
 	db, err = sqlx.Connect("postgres", "user=admincomposcan dbname=offergreatparis password=KangourouIvre666 sslmode=disable")
 	if err != nil {

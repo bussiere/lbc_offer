@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37ba22fd-accd-48e2-afdc-5ad59b4d84b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DeleteOfferBuy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Export_09_06_2019.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Export_09_06_2019.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Croupier/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertLbc/ConvertLbc.go" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertLbc/ConvertLbc.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Croupier/Croupier.go" beforeDir="false" afterPath="$PROJECT_DIR$/Croupier/Croupier.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Offer/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Offer/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0002_auto_20190404_1307.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0003_auto_20190404_1317.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0004_auto_20190404_1321.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0005_auto_20190404_1332.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0006_auto_20190405_1410.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0007_auto_20190405_1456.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0008_auto_20190605_1944.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0009_buyplan_postal_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0010_buyplan_commune.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0011_auto_20190608_2012.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0012_buy_ad_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0013_auto_20190609_0950.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0014_buy_postal_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0015_buy_pic1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/migrations/0016_auto_20190609_1023.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Offer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Offer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OfferGreatParis/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OfferGreatParis/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,11 +49,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Croupier/Croupier.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="238" column="44" selection-start-line="238" selection-start-column="44" selection-end-line="238" selection-end-column="44" />
+            <state relative-caret-position="122">
+              <caret line="160" column="82" selection-start-line="160" selection-start-column="82" selection-end-line="160" selection-end-column="82" />
               <folding>
                 <element signature="e#14#128#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Croupier/Test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="125" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/go/src/github.com/jmoiron/sqlx/sqlx.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="319" column="14" selection-start-line="319" selection-start-column="14" selection-end-line="319" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -94,6 +91,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -121,6 +119,7 @@
         <option value="$PROJECT_DIR$/Croupier.go" />
         <option value="$PROJECT_DIR$/Data.json" />
         <option value="$PROJECT_DIR$/ConvertLbc/ConvertLbc.go" />
+        <option value="$PROJECT_DIR$/Croupier/Test.py" />
         <option value="$PROJECT_DIR$/Croupier/Croupier.go" />
       </list>
     </option>
@@ -190,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build Croupier.go">
     <configuration name="go build ConvertLbc.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Micro" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -199,8 +198,17 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build Croupier.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Micro" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Croupier/Croupier.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Croupier.go" />
         <item itemvalue="Go Build.go build ConvertLbc.go" />
       </list>
     </recent_temporary>
@@ -209,12 +217,12 @@
     <frame x="-4" y="36" width="1928" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49667773" visible="true" weight="0.3665955" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49667773" visible="true" weight="0.3665955" />
       <window_info id="Structure" order="1" sideWeight="0.50332224" side_tool="true" visible="true" weight="0.3665955" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34279475" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34279475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -265,10 +273,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/jmoiron/sqlx/sqlx.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="319" column="14" selection-start-line="319" selection-start-column="14" selection-end-line="319" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Croupier/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="125" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Croupier/Croupier.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="238" column="44" selection-start-line="238" selection-start-column="44" selection-end-line="238" selection-end-column="44" />
+        <state relative-caret-position="122">
+          <caret line="160" column="82" selection-start-line="160" selection-start-column="82" selection-end-line="160" selection-end-column="82" />
           <folding>
             <element signature="e#14#128#0" expanded="true" />
           </folding>
