@@ -4,7 +4,8 @@
     <list default="true" id="35a66737-7bef-4e5b-87a9-c8d7981d87c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Micro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Micro/ConvertLbc/ConvertLbc.go" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/ConvertLbc/ConvertLbc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Micro/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Micro/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/go.sum" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,12 +189,12 @@
       <workItem from="1560005372182" duration="612000" />
       <workItem from="1560012407839" duration="599000" />
       <workItem from="1560021168533" duration="1665000" />
-      <workItem from="1560070434108" duration="2607000" />
+      <workItem from="1560070434108" duration="3005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14401000" />
+    <option name="totallyTimeSpent" value="14799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="36" width="1920" height="1044" extended-state="6" />

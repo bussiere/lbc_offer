@@ -11,6 +11,7 @@ import (
 	"github.com/lib/pq"
 	_ "github.com/lib/pq"
 	"github.com/mmcloughlin/geohash"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -122,29 +123,48 @@ type OfferDB struct {
 	Score       sql.NullInt64   `db:"score"`
 	Origin      sql.NullString  `db:"origin"`
 	SellerId    sql.NullInt64   `db:"seller_id"`
-	Commune sql.NullString  `db:"commune"`
-	PostalCode sql.NullString  `db:"postal_code"`
-	Pic1 sql.NullString `db:"pic1"`
+	Commune     sql.NullString  `db:"commune"`
+	PostalCode  sql.NullString  `db:"postal_code"`
+	Pic1        sql.NullString  `db:"pic1"`
+}
+
+type Seller struct {
+
+	id integer NOT NULL DEFAULT nextval('"Offer_seller_id_seq"'::regclass),
+	created timestamp with time zone,
+	modified timestamp with time zone,
+	name character varying(200),
+	url character varying(200),
+	contact character varying(200),
+	phone character varying(200),
+	email character varying(200),
+	note character varying(200),
+	adresse_uuid character varying(48),
+	"geoHash" character varying(200),
+	"gpsLat" numeric(9,6),
+	"gpsLong" numeric(9,6),
+	uuid character varying(48),
+	group_id integer,
 }
 
 func convertLbc(c *gin.Context) {
 	var rawOffer RawOffer
 	c.BindJSON(&rawOffer)
-	fmt.Println(rawOffer.RawOfferData)
+	//fmt.Println(rawOffer.RawOfferData)
 	var err error
 	s := strings.Split(rawOffer.RawOfferData, `"data": `)
 
 	s2 := `{ "data": ` + s[1]
 	result := strings.Replace(s2, `, "status": "ready"}]`, ``, -1)
 	result = result + "}"
-	fmt.Println(result)
+	//fmt.Println(result)
 	var rawOfferLbc RawOfferLbc
 	if err = json.Unmarshal([]byte(result), &rawOfferLbc); err != nil {
-		fmt.Println(result)
+		//fmt.Println(result)
 		panic(err)
 	}
 	DecodeRaw(rawOfferLbc)
-	fmt.Println(rawOfferLbc)
+	//fmt.Println(rawOfferLbc)
 
 }
 
@@ -153,61 +173,102 @@ func DecodeRaw(rawOfferLbc RawOfferLbc) {
 	var query string
 	query = `SELECT * FROM  "Offer_buy" WHERE ad_id=$1`
 
+	fmt.Println("inside convert")
+
 	for _, ad := range rawOfferLbc.Data.Ads {
 		var offerDB OfferDB
 		var offers []OfferDB
-
-		err := db.Select(&offers, query, ad.ListID)
-		if err != nil {
-			panic(err)
-		}
-		if len(offers) > 0 {
-
-		offerDB.AdId.Int64 = int64(ad.ListID)
-		offerDB.AdId.Valid = true
-
-			offerDB.DateAd.Time, err = time.Parse("2006-01-02 15:04:05", ad.FirstPublicationDate)
+		if ad.CategoryName == "Ventes immobili\u00e8res" && len(ad.Price) == 1 {
+			err := db.Select(&offers, query, ad.ListID)
 			if err != nil {
 				panic(err)
 			}
+			if len(offers) ==  0 {
+
+				offerDB.AdId.Int64 = int64(ad.ListID)
+				offerDB.AdId.Valid = true
+
+				offerDB.DateAd.Time, err = time.Parse("2006-01-02 15:04:05", ad.FirstPublicationDate)
+				if err != nil {
+					panic(err)
+				}
+                fmt.Println(ad.Price)
+				offerDB.Price.Float64 = float64(ad.Price[0])
+				offerDB.Price.Valid = true
+
+				offerDB.CatOne.String = ad.Attributes[0].ValueLabel
+				offerDB.CatOne.Valid = true
+				// the key for the m2
+				var keyMeter int
+				var keyRoom int
+				keyRoom = -1
+				for index, attribute := range ad.Attributes {
+					if attribute.Key == "square" {
+						keyMeter = index
+					}
+					if attribute.Key == "room" {
+						keyRoom = index
+					}
+
+				}
+
+				offerDB.M2.Int64, err = strconv.ParseInt(ad.Attributes[keyMeter].Value, 10, 64)
+				if err != nil {
+					panic(err)
+				}
+
+				offerDB.M2.Valid = true
+
+				if keyRoom != - 1 {
+					offerDB.Piece.Int64, err = strconv.ParseInt(ad.Attributes[keyRoom].Value, 10, 64)
+					if err != nil {
+						panic(err)
+					}
+
+					offerDB.Piece.Valid = true
+				}
+
+				// location block
+				offerDB.Commune.String = ad.Location.City
+				offerDB.Commune.Valid = true
+
+				offerDB.PostalCode.String = ad.Location.Zipcode
+				offerDB.PostalCode.Valid = true
+
+				offerDB.GpsLat.Float64 = ad.Location.Lat
+				offerDB.GpsLat.Valid = true
+				offerDB.GpsLong.Float64 = ad.Location.Lng
+				offerDB.GpsLong.Valid = true
+				offerDB.Geohash.String = geohash.Encode(offerDB.GpsLat.Float64, offerDB.GpsLong.Float64)
+				offerDB.Geohash.Valid = true
 
 
-		offerDB.Price.Float64 = float64(ad.Price[0])
-		offerDB.Price.Valid = true
+				// description
+				offerDB.Description.String = ad.Body
+				offerDB.Description.Valid = true
 
-		offerDB.CatOne.String = ad.Attributes[0].ValueLabel
-		offerDB.CatOne.Valid = true
-
-		offerDB.M2.Int64 = int64(ad.Attributes[1].Value)
-		offerDB.M2.Valid = true 
+				offerDB.Pic1.String = ad.Images.ThumbURL
+				offerDB.Pic1.Valid = true
 
 
-		offerDB.Commune.String = ad.Location.City
-		offerDB.Commune.Valid = true
 
-		offerDB.Description.String = ad.Body
-		offerDB.Description.Valid = true
 
-		offerDB.Pic1.String = ad.Images.ThumbURL
-		offerDB.Pic1.Valid = true
 
-		offerDB.Commune.Valid = true
-		offerDB.PostalCode.String = ad.Location.Zipcode
-		offerDB.PostalCode.Valid = true
+				offerDB.Available = true
+				tx := db.MustBegin()
+				if err != nil {
+					panic(err)
+				}
+				//tx.NamedExec(`INSERT INTO "Offer_buy" (ad_id, date_ad, price,cat_one,m2,piece,commune,postal_code,gps_lat,gps_long,geohash,description,pic1) VALUES (:ad_id, :date_ad, :price,:m2,:piece,:commune,:postal_code,:gps_lat,:gps_long,:geohash,:description,:pic1)`, offerDB)
+				//TODO :  need to optimize
+				tx.MustExec(`INSERT INTO "Offer_buy"  (ad_id,available) VALUES ($1,$2)`, offerDB.AdId,true)
 
-		offerDB.GpsLat.Float64 = ad.Location.Lat
-		offerDB.GpsLat.Valid = true
-		offerDB.GpsLong.Float64 = ad.Location.Lng
-		offerDB.GpsLong.Valid = true
-		offerDB.Geohash.String = geohash.Encode(offerDB.GpsLat.Float64, offerDB.GpsLong.Float64)
-		offerDB.Geohash.Valid = true
-			tx := db.MustBegin()
-			if err != nil {
-				panic(err)
+				err = tx.Commit()
+				if err != nil {
+					panic(err)
+				}
+				fmt.Println("inserted in db normally ...")
 			}
-		tx.NamedExec(`INSERT INTO "Offer_buy" (ad_id, name, secret) VALUES (:ad_id, :name, :secret)`, offerDB)
-
-			tx.Commit()
 		}
 	}
 
@@ -231,6 +292,10 @@ func Test() {
 
 var db *sqlx.DB
 
+func InitSeller() {
+
+}
+
 func main() {
 	var err error
 	db, err = sqlx.Connect("postgres", "user=admincomposcan dbname=offergreatparis password=KangourouIvre666 sslmode=disable")
@@ -238,6 +303,7 @@ func main() {
 		panic(err)
 	}
 	//Test()
+	InitSeller()
 	fmt.Println("begin")
 	r := gin.Default()
 	r.Use(cors.Default())
