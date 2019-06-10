@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37ba22fd-accd-48e2-afdc-5ad59b4d84b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PriceMaster/PriceMaster.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertLbc/ConvertLbc.go" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertLbc/ConvertLbc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Croupier/Croupier.go" beforeDir="false" afterPath="$PROJECT_DIR$/Croupier/Croupier.go" afterDir="false" />
-    </list>
+    <list default="true" id="37ba22fd-accd-48e2-afdc-5ad59b4d84b0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
