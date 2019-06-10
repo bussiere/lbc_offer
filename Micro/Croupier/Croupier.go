@@ -14,13 +14,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type Pos struct {
+type MessageToCroupier struct {
 	Geohash string `json:"Geohash"`
 	NbMinuteCar int `json:"NbMinuteCar"`
 	NbMinuteWalk int `json:"NbMinuteWalk"`
 }
 
-type Response struct {
+type CroupierMicroResponse struct {
 	Status        string  `json:"Status"`
 	Offers []OfferResponse `json:"Offers"`
 }
@@ -142,7 +142,7 @@ func Distance(lat1, lon1, lat2, lon2 float64) float64 {
 
 
 
-func getDistanceOffer (pos Pos,offers *[]OfferResponse){
+func getDistanceOffer (pos MessageToCroupier,offers *[]OfferResponse){
 	posGpsLat,posGpsLong := geohash.Decode(pos.Geohash)
 	for index, offer := range *offers  {
 		offer.DistanceFly = Distance(posGpsLat, posGpsLong, offer.GpsLat, offer.GpsLong)
@@ -154,7 +154,7 @@ func getDistanceOffer (pos Pos,offers *[]OfferResponse){
 }
 
 
-func getBuyFromHash(pos Pos,response *[]OfferResponse) {
+func getBuyFromHash(pos MessageToCroupier,response *[]OfferResponse) {
 	var query string
 	var err error
 	var offers []OfferDB
@@ -184,7 +184,7 @@ func getBuyFromHash(pos Pos,response *[]OfferResponse) {
 	}
 }
 
-func sortTime(pos Pos,offers *[]OfferResponse){
+func sortTime(pos MessageToCroupier,offers *[]OfferResponse){
 	for index,offer := range *offers {
 		if (int(offer.TimeTravelCM) > pos.NbMinuteCar && int(offer.TimeTravelWM) > pos.NbMinuteWalk) {
 			*offers = append((*offers)[:index], (*offers)[index+1:]...)
@@ -194,8 +194,8 @@ func sortTime(pos Pos,offers *[]OfferResponse){
 
 
 func getOfferFromHash(c *gin.Context) {
-	var pos Pos
-	var response Response
+	var pos MessageToCroupier
+	var croupierResponse CroupierMicroResponse
 	c.BindJSON(&pos)
     var offers []OfferResponse
 	getBuyFromHash(pos,&offers)
@@ -203,9 +203,9 @@ func getOfferFromHash(c *gin.Context) {
 	sortTime(pos,&offers)
 
 
-    response.Offers = offers
-	response.Status = "Ok"
-	c.JSON(http.StatusOK, response)
+	croupierResponse.Offers = offers
+	croupierResponse.Status = "Ok"
+	c.JSON(http.StatusOK, croupierResponse)
 }
 
 

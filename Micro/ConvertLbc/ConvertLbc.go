@@ -377,7 +377,7 @@ var db *sqlx.DB
 var lbc Seller
 func main() {
 	var err error
-	db, err = sqlx.Connect("postgres", "user=admincomposcan dbname=offergreatparis password=KangourouIvre666 sslmode=disable")
+// 'yàçt' <- when my cat put his balls on my keyboard
 	if err != nil {
 		panic(err)
 	}

@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a66737-7bef-4e5b-87a9-c8d7981d87c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DeleteOfferBuy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Export_09_06_2019.json" beforeDir="false" afterPath="$PROJECT_DIR$/Export_09_06_2019.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Micro/PriceMaster/PriceMaster.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Micro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Micro/ConvertLbc/ConvertLbc.go" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/ConvertLbc/ConvertLbc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Micro/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/Micro/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0002_auto_20190404_1307.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0003_auto_20190404_1317.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0004_auto_20190404_1321.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0005_auto_20190404_1332.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0006_auto_20190405_1410.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0007_auto_20190405_1456.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0008_auto_20190605_1944.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0009_buyplan_postal_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0010_buyplan_commune.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0011_auto_20190608_2012.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0012_buy_ad_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0013_auto_20190609_0950.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0014_buy_postal_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0015_buy_pic1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/migrations/0016_auto_20190609_1023.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Offer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OfferGreatParis/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OfferGreatParis/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/DeleteOfferBuy.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -267,12 +244,12 @@
       <workItem from="1560005372182" duration="612000" />
       <workItem from="1560012407839" duration="599000" />
       <workItem from="1560021168533" duration="1665000" />
-      <workItem from="1560070434108" duration="7048000" />
+      <workItem from="1560070434108" duration="7738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18842000" />
+    <option name="totallyTimeSpent" value="19532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="36" width="1920" height="1044" extended-state="6" />
@@ -283,7 +260,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969433" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32969433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,7 +328,7 @@
     <entry file="file://$PROJECT_DIR$/DeleteOfferBuy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
