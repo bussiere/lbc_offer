@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'simple_history.middleware.HistoryRequestMiddleware',
+#    'simple_history.middleware.HistoryRequestMiddleware',
 ]
 
 ROOT_URLCONF = 'OfferGreatParis.urls'
@@ -85,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'offergreatparis',
-        'USER': 'admincomposcan',
-        'PASSWORD': "KangourouIvre666",
+        'USER': 'admin_gp',
+        'PASSWORD': "gpParis1981Chirac",
         'HOST': 'localhost',
         'PORT': '',
     }
